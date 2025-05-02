@@ -1,23 +1,33 @@
 <header class="header">
   <nav class="nav">
     <ul class="nav-list">
-      <li class="nav-item">
-        <a href="/page-2.html" class="nav-link">Page 2</a>
-      </li>
+      <a href="https://" class="header-link">
+        <img
+          class="header-logo"
+          width="20"
+          height="20"
+          srcset="/src/img/logo_1x.jpg 1x, /src/img/logo_2x.jpg 2x"
+          src="/src/img/logo_1x.jpg"
+          alt="logo"
+        />
+      </a>
 
-      <li class="nav-item">
-        <a href="/page-3.html" class="nav-link">Page 3</a>
-      </li>
-    </ul>
-    <button type="button" class="burger-btn" data-action="open">Open menu</button>
-    <div class="burger-menu" data-visible="close">
+      <button class="burger" aria-label="Open menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <ul>
-        <li><a href="#">link-1</a></li>
-        <li><a href="#">link-2</a></li>
-        <li><a href="#">link-3</a></li>
-        <li><a href="#">link-4</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="game-description">Game Description</a></li>
+        <li><a href="#extra-blocks">Extra Blocks</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#key-features">Key Features</a></li>
+        <li><a href="#main-characters">Main Characters</a></li>
+        <li><a href="#reviews">Reviews</a></li>
       </ul>
-      <button type="button" class="btn-close" data-action="close">close</button>
-    </div>
+    </ul>
   </nav>
 </header>
