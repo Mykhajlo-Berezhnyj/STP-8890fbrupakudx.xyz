@@ -1,10 +1,11 @@
 .footer {
     background-color: #112a4a;
   }
-  .footer-container {
+  .footer-container {    
     height: 312px;
     padding: 40px 0;
-    color: #fff;    
+    color: #fff;
+    @include container;        
   }
   .footer-menu-list {
     display: flex;
