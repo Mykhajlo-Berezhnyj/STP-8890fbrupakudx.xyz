@@ -29,26 +29,29 @@
   --weight-bold: 700;
 
   /* Font sizes */
-  --h1-size: 80px;
-  --h2-size: 50px;
-  --h3-size: 32px;
-  --h4-size: 20px;
-  --text-size: 20px;
+  --h1-size: 45px;
+  --h2-size: 32px;
+  --h3-size: 25px;
+  --h4-size: 16px;
+  --h5-size: 15px;
+  --h6-size: 12px;
+  --h7-size: 12px;
+  --text-size: 16px;
 }
 
-@include media(mobile) {
+@include media(desktop) {
   :root {
-    --h1-size: 45px;
-    --h2-size: 32px;
-    --h3-size: 25px;
-    --h4-size: 16px;
-    --h5-size: 15px;
-    --h6-size: 12px;
-    --h7-size: 12px;
-    --text-size: 16px;
+    --h1-size: 80px;
+    --h2-size: 50px;
+    --h3-size: 32px;
+    --h4-size: 20px;
+    --text-size: 20px;
   }
 }
 
 body {
-  background: linear-gradient(to right, #1a3a64 1%, #209887 100%);
+  background: $_main_bg_color;
+  color: $_main_color;
+  font-family: 'Jura', sans-serif;
+  font-size: var(--h4-size);
 }
