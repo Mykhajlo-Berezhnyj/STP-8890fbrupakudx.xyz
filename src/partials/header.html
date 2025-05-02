@@ -1,33 +1,43 @@
-<header class="header">
-  <nav class="nav">
-    <ul class="nav-list">
-      <a href="https://" class="header-link">
+<header>
+  <div header-container>
+    <nav data-menu>
+      <a data-logo-link href="/">
         <img
-          class="header-logo"
+          data-logo-img
           width="20"
           height="20"
-          srcset="/src/img/logo_1x.jpg 1x, /src/img/logo_2x.jpg 2x"
-          src="/src/img/logo_1x.jpg"
+          srcset="../img/logo_1x.jpg 1x, ../img/logo_2x.jpg 2x"
+          src="../img/logo_1x.jpg"
           alt="logo"
         />
       </a>
 
-      <button class="burger" aria-label="Open menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <button
+        data-burger="false"
+        aria-label="Menu"
+        aria-expanded="false"
+      ></button>
 
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#benefits">Benefits</a></li>
-        <li><a href="game-description">Game Description</a></li>
-        <li><a href="#extra-blocks">Extra Blocks</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#key-features">Key Features</a></li>
-        <li><a href="#main-characters">Main Characters</a></li>
-        <li><a href="#reviews">Reviews</a></li>
+      <ul data-nav-list>
+        <li data-item-list><a class="nav-link" href="#home">Home</a></li>
+        <li data-item-list>
+          <a class="nav-link" href="#benefits">Benefits</a>
+        </li>
+        <li data-item-list>
+          <a class="nav-link" href="game-description">Game Description</a>
+        </li>
+        <li data-item-list>
+          <a class="nav-link" href="#extra-blocks">Extra Blocks</a>
+        </li>
+        <li data-item-list><a class="nav-link" href="#gallery">Gallery</a></li>
+        <li data-item-list>
+          <a class="nav-link" href="#key-features">Key Features</a>
+        </li>
+        <li data-item-list>
+          <a class="nav-link" href="#main-characters">Main Characters</a>
+        </li>
+        <li data-item-list><a class="nav-link" href="#reviews">Reviews</a></li>
       </ul>
-    </ul>
-  </nav>
+    </nav>
+  </div>
 </header>
