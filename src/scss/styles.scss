@@ -1,7 +1,7 @@
-@import './common/breakpoints';
-@import './common/mixins';
-@import './common/reset';
-@import './common/vars';
+// @import './common/breakpoints';
+// @import './common/mixins';
+// @import './common/reset';
+// @import './common/vars';
 @import './header';
 @import './pages/cookies-policy';
 @import './pages/home';
@@ -54,4 +54,8 @@ body {
   color: $_main_color;
   font-family: 'Jura', sans-serif;
   font-size: var(--h4-size);
+}
+
+body.no-scroll {
+  overflow: hidden;
 }
