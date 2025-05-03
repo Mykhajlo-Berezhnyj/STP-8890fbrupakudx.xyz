@@ -22,12 +22,20 @@
       rel="stylesheet"
     />
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <title>Night at the Valley</title>
     
     <script type="module" crossorigin src="/STP-8890fbrupakudx.xyz/commonHelpers2.js"></script>
-    <link rel="modulepreload" crossorigin href="/STP-8890fbrupakudx.xyz/assets/vendor-5d0e5362.js">
-    <link rel="stylesheet" href="/STP-8890fbrupakudx.xyz/assets/vendor-1f9fe898.css">
-    <link rel="stylesheet" href="/STP-8890fbrupakudx.xyz/assets/styles-40543549.css">
+    <link rel="modulepreload" crossorigin href="/STP-8890fbrupakudx.xyz/assets/vendor-f20643ae.js">
+    <link rel="stylesheet" href="/STP-8890fbrupakudx.xyz/assets/vendor-7605525c.css">
+    <link rel="stylesheet" href="/STP-8890fbrupakudx.xyz/assets/styles-977339b5.css">
   </head>
 
   <body>
@@ -45,7 +53,7 @@
         />
       </a>
 
-      <button data-burger="true" aria-label="Menu" aria-expanded="false">
+      <button data-burger="false" aria-label="Menu" aria-expanded="false">
         <svg class="icon" width="20" height="20">
           <use href="/STP-8890fbrupakudx.xyz/assets/sprite-2e658132.svg#icon-menu"></use>
         </svg>
@@ -75,6 +83,59 @@
   </div>
 </header>
 
+    <section class="hero">
+  <div class="container">
+    <div class="hero-right">
+      <h1 class="hero-title">Night at the Valley</h1>
+      <a
+        href="https://play.google.com/store/apps/details?id=com.pitaya.natv&hl=en&gl=us"
+        target="_blank"
+        rel="noreferrer noopener"
+        class="gplay-button"
+      >
+        Play Free
+      </a>
+      <p class="hero-text">
+        Join Moo and Lulu in a Magical Defense! Strategize, Upgrade, and Protect
+        Emerald Village from Enchanted Invasion!
+      </p>
+      <a
+        data-fancybox
+        href="https://www.youtube.com/watch?v=cOMpL73qVcE"
+        aria-label="Play video"
+      >
+        <img
+          src="https://img.youtube.com/vi/cOMpL73qVcE/hqdefault.jpg"
+          alt="Defend the Valley Now! preview"
+          data-video-thumb
+        />
+        <span class="video-title">▶ "Defend the Valley Now!"</span>
+      </a>
+    </div>
+    <div class="tumb">
+      <picture>
+        <!-- mobile -->
+        <source
+          media="(max-width: 768px)"
+          srcset="/STP-8890fbrupakudx.xyz/assets/hero-1mobile1x-a4125e5f.webp 1x, /STP-8890fbrupakudx.xyz/assets/hero-1mobile2x-9817cad3.webp 2x"
+        />
+        <!-- Destkop -->
+        <source
+          media="(min-width: 769px)"
+          srcset="/STP-8890fbrupakudx.xyz/assets/hero-1desktop1x-2c2077af.webp 1x, /STP-8890fbrupakudx.xyz/assets/hero-1desktop2x-d346e935.webp 2x"
+        />
+        <img
+          class="hero-img"
+          src="/STP-8890fbrupakudx.xyz/assets/hero-1mobile1x-a4125e5f.webp"
+          alt="Night at the Valley"
+          width="20"
+          height="20"
+        />
+      </picture>
+    </div>
+  </div>
+</section>
+
     
     
     
@@ -82,7 +143,7 @@
     
     
     
-    <footer class="footer">
+    <!-- <footer class="footer">
     <div class="footer-container">
       <ul class="footer-menu-list">
         <li><a href="/privacy-policy.html">Privacy Policy</a></li>
@@ -92,15 +153,17 @@
       </ul>
       <p class="footer-rights">© 2025 fbrupakudx.xyz | All Rights Reserved</p>
     </div>
-  </footer>
+  </footer> -->
     <div data-modal hidden>
-  <h2 class="h-cookie-polisy">Cookies Policy</h2>
-  <p class="text-cookie-polisy">
-    We use cookies to improve your experience on our website. By browsing this
-    website, you agree to our use of cookies.
-  </p>
-  <button data-btn-accept type="button">ACCEPT COOKIES</button>
-  <button data-btn-decline type="button">DECLINE COOKIES</button>
+  <div class="modal-container">
+    <h2 class="h-cookie-polisy">Cookies Policy</h2>
+    <p class="text-cookie-polisy">
+      We use cookies to improve your experience on our website. By browsing this
+      website, you agree to our use of cookies.
+    </p>
+    <button data-btn-accept type="button">ACCEPT COOKIES</button>
+    <button data-btn-decline type="button">DECLINE COOKIES</button>
+  </div>
 </div>
 
 
