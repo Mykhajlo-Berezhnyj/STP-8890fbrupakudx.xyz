@@ -1,0 +1,149 @@
+.hero {
+  padding-top: 333px;
+  @include media(desktop) {
+    padding-top: 150px;
+  }
+}
+
+.container {
+  @include container;
+  position: relative;
+}
+
+.hero-right {
+  padding-bottom: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 288px;
+  @include media(desktop) {
+    padding-bottom: 105px;
+    width: 552px;
+  }
+}
+
+.hero-title {
+  font-family: var(--font-decor);
+  font-size: var(--h1-size);
+  font-weight: 400;
+  line-height: 40px;
+  text-align: left;
+  @include media(desktop) {
+    font-size: 80px;
+    line-height: 70px;
+  }
+}
+
+.gplay-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 43px;
+  margin-bottom: 44px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  max-width: 288px;
+  height: 57;
+  border-radius: 3.3px;
+  border: 0.83px solid #000000;
+  background: $_link_hover_color;
+  font-family: var(--font-decor);
+  font-weight: 400;
+  font-size: 26.41px;
+  line-height: 24.76px;
+  color: #d9d9d9;
+  text-shadow: 2px 2px 2px #000000;
+
+  @include media(desktop) {
+    position: absolute;
+    top: 324px;
+    left: 36px;
+    width: 349px;
+    height: 68px;
+    margin-top: 28px;
+  }
+}
+
+.gplay-button:hover {
+  border: 4.13px solid #000000;
+  scale: 1.03;
+}
+
+.gplay-button:active {
+  border: none;
+  scale: 1.05;
+}
+
+.hero-text {
+  font-weight: 300;
+  line-height: 22px;
+  text-align: left;
+  margin-bottom: 20px;
+
+  @include media(desktop) {
+    font-family: Jura;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+
+    margin-top: 48px;
+    margin-bottom: 28px;
+  }
+}
+
+[data-fancybox]:hover [data-video-thumb] {
+  transform: translate(-50%, -5%) scale(1);
+  opacity: 1;
+  width: 200px;
+  @include media(desktop) {
+    width: 350px;
+    transform: translate(-150%, -70%) scale(1);
+  }
+}
+
+[data-video-link] {
+}
+
+[data-video-thumb] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.5);
+  opacity: 0;
+  transition: transform 0.4s ease, opacity 0.4s ease;
+  pointer-events: none;
+}
+
+.video-title {
+  text-decoration: underline;
+}
+.gplay-button {
+}
+
+.tumb {
+  position: absolute;
+  max-width: 269.27px;
+  height: 212px;
+  top: -252.41px;
+  left: 27.5px;
+  transform: rotate(5.44deg);
+
+  @include media(desktop) {
+    max-width: 606px;
+    height: 477px;
+    top: 35px;
+    left: 575px;
+    transform: rotate(0deg);
+  }
+}
+
+.tumb:hover {
+  transform: rotate(-11deg);
+  @include media(desktop) {
+    transform: rotate(-5.5deg);
+  }
+}
+
+.hero-img {
+  width: 100%;
+}
