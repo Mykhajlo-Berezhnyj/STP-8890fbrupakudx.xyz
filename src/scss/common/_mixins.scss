@@ -42,16 +42,24 @@ screen types:
 
 @mixin container {
   width: 100%;
-  @include media(mobile) {
-    max-width: 100%;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin: 0 auto;
-  }
+  max-width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+
   @include media(desktop) {
     max-width: $desktop;
     padding-left: 36px;
     padding-right: 36px;
-    margin: 0 auto;
+  }
+}
+
+@mixin section {
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  @include media(desktop) {
+    padding-top: 210px;
+    padding-bottom: 210px;
   }
 }
