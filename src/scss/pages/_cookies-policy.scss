@@ -1,0 +1,126 @@
+.cookies-policy-container {
+  padding: 20px 16px 60px;
+  color: #fff;
+}
+.cookies-policy-info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cookies-policy-home {
+  display: inline-block;
+  margin-bottom: 40px;
+}
+.cookies-policy-home::before {
+  content: '<';
+  margin-right: 4px;
+}
+.cookies-policy h3 {
+  font-family: var(--font-decor);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.cookies-policy h4 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2.14;
+  margin-bottom: 16px;
+}
+
+.cookies-policy h5 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.43;
+  margin-bottom: 16px;
+}
+
+.cookies-policy p,
+.cookies-policy ul {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+}
+.cookies-policy li {
+  padding-left: 22px;
+  position: relative;
+}
+
+.cookies-policy li::before {
+  content: '';
+  position: absolute;
+  left: 9px;
+  top: 9px;
+
+  width: 3px;
+  height: 3px;
+  background-color: white;
+  border-radius: 1px;
+}
+.cookies-policy-p,
+.cookies-policy-list {
+  margin-bottom: 16px;
+}
+.cookies-policy-link {
+  text-decoration: underline;
+}
+
+@media screen and (min-width: 1200px) {
+  .cookies-policy-container {
+    padding: 80px 36px 120px;
+  }
+  .cookies-policy-info {
+    gap: 30px;
+  }
+  .cookies-policy-home {
+    margin-bottom: 60px;
+  }
+
+  .cookies-policy h3 {
+    font-size: 36px;
+    line-height: 0.83;
+    margin-bottom: 40px;
+  }
+  .cookies-policy h4 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  .cookies-policy h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+
+  .cookies-policy p,
+  .cookies-policy ul {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .cookies-policy li {
+    padding-left: 32px;
+  }
+
+  .cookies-policy li::before {
+    content: '';
+    position: absolute;
+    left: 15px;
+    top: 15px;
+
+    width: 4px;
+    height: 4px;
+    background-color: white;
+    border-radius: 1px;
+  }
+  .cookies-policy-p,
+  .cookies-policy-list {
+    margin-bottom: 20px;
+  }
+}
