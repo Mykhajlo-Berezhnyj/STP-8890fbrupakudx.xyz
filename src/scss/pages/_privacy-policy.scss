@@ -1,5 +1,7 @@
 .privacy-policy-container {
+  max-width: 320px;
   padding: 20px 16px 60px; 
+  margin: 0 auto;  
   color: #fff; 
 }
 .privacy-policy-info {
@@ -58,7 +60,9 @@
   background-color: white;
   border-radius: 1px;
 }
-.privacy-policy-p {
+
+.privacy-policy-p,
+.privacy-policy-list {
   margin-bottom: 16px;
 }
 
@@ -68,6 +72,7 @@
 
 @media screen and (min-width: 1200px) {
   .privacy-policy-container {
+    max-width: 1200px;
     padding: 80px 36px 120px;
   }
   .privacy-policy-info {
@@ -117,7 +122,8 @@
     background-color: white;
     border-radius: 1px;
   }
-  .privacy-policy-p {
+  .privacy-policy-p,
+  .privacy-policy-list {
     margin-bottom: 20px;
   }
 }

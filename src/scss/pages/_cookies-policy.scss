@@ -1,5 +1,7 @@
 .cookies-policy-container {
+  max-width: 320px;  
   padding: 20px 16px 60px;
+  margin: 0 auto;
   color: #fff;
 }
 .cookies-policy-info {
@@ -69,6 +71,7 @@
 
 @media screen and (min-width: 1200px) {
   .cookies-policy-container {
+    max-width: 1200px;
     padding: 80px 36px 120px;
   }
   .cookies-policy-info {
