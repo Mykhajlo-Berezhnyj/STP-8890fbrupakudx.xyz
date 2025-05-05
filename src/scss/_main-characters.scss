@@ -1,0 +1,179 @@
+.main-characters-section {
+  padding-top: 66px;
+  background-image: url('../img/main-characters/main-characters-flashlight-mob.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.main-characters-container {
+  max-width: 320px;
+  margin: 0 auto;
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+.main-characters-title {
+  font-family: var(--font-decor);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.1;
+  text-align: right;
+  color: #000;
+  margin-bottom: 80px;
+  -webkit-text-stroke: 0.4px white;
+}
+
+.main-characters-img {
+  position: absolute;
+  top: -33px;
+  right: 1px;
+}
+
+.main-characters-slider-container {
+  padding-left: 47px;
+  padding-right: 47px;
+}
+
+.main-characters-section .main-characters-slider {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-characters-slider {
+  overflow: hidden;
+}
+
+.main-characters-slider .main-characters-slider-item {
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  // box-shadow: 4px 5px 7px 0 rgba(0, 0, 0, 0.35);
+  background: #d9d9d9;
+  height: 422px;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+.main-characters-slider .main-characters-slider-item-moo {
+  background-image: url('../img/main-characters/main-characters-moo-title-mob.png');
+}
+.main-characters-slider .main-characters-slider-item-lulu {
+  background-image: url('../img/main-characters/main-characters-lulu-title-mob.png');
+}
+.main-characters-slider .main-characters-slider-item-bramble {
+  background-image: url('../img/main-characters/main-characters-bramble-title-mob.png');
+}
+.main-characters-slider .main-characters-slider-item-foglings {
+  background-image: url('../img/main-characters/main-characters-foglings-title-mob.png');
+}
+
+.main-characters-slider-item-title {
+  font-family: var(--font-decor);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.47;
+  margin-bottom: 69px;
+}
+.main-characters-slider-img {
+    margin-left: auto;
+    margin-right: auto;
+  margin-bottom: 24px;
+  width: 145px;
+}
+.main-characters-slider-item-info {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.83;
+  color: #000;
+}
+
+.main-characters-slider .main-characters-slider-pagination {
+  position: static;
+}
+
+.main-characters-slider-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 9px;
+  height: 9px;
+  background-color: #ffe066;
+}
+
+.main-characters-slider-pagination .swiper-pagination-bullet {
+  background-color: #000;
+  opacity: 1;
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-characters-section {
+    padding-top: 215px;
+    background-image: url('../img/main-characters/main-characters-flashlight-desk.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+
+  .main-characters-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 36px;
+    padding-right: 36px;
+    padding-bottom: 120px;
+
+    position: relative;
+  }
+
+  .main-characters-title {
+    margin-bottom: 280px;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 0.44;
+  }
+
+  .main-characters-img {
+    position: absolute;
+    top: -110px;
+    right: 10px;
+  }
+
+  .main-characters-slider-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .main-characters-slider .main-characters-slider-item {
+    border-radius: 10px;
+    padding: 40px 28px;
+    height: 574px;
+    // box-shadow: 8px 11px 13px 0 rgba(0, 0, 0, 0.35);
+    background-position: center top;
+    background-repeat: no-repeat;
+  }
+  .main-characters-slider .main-characters-slider-item-moo {
+    background-image: url('../img/main-characters/main-characters-moo-title-desk.png');
+  }
+  .main-characters-slider .main-characters-slider-item-lulu {
+    background-image: url('../img/main-characters/main-characters-lulu-title-desk.png');
+  }
+  .main-characters-slider .main-characters-slider-item-bramble {
+    background-image: url('../img/main-characters/main-characters-bramble-title-desk.png');
+  }
+  .main-characters-slider .main-characters-slider-item-foglings {
+    background-image: url('../img/main-characters/main-characters-foglings-title-desk.png');
+  }
+
+  .main-characters-slider-item-title {
+    font-size: 18px;
+    margin-bottom: 81px;
+  }
+  .main-characters-slider-img {
+    width: 200px;
+    margin-bottom: 34px;
+  }
+  .main-characters-slider-item-info {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 1.67;
+  }
+}
