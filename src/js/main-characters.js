@@ -6,8 +6,8 @@ import { Pagination } from 'swiper/modules';
 const data = [
   {
     name: 'MOO',
-    avatarMob: './img/main-characters/main-characters-moo-mob.png',
-    avatarDesk: './img/main-characters/main-characters-moo-desk.png',
+    avatarMob: '/img/main-characters/main-characters-moo-mob.png',
+    avatarDesk: '/img/main-characters/main-characters-moo-desk.png',
     description:
       'A clever guardian with control over elemental magic. He uses spells to slow and confuse enemies.',
   },
