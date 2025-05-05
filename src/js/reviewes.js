@@ -1,44 +1,40 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Keyboard, Pagination } from 'swiper/modules';
+import { Pagination } from 'swiper/modules';
 
 const data = [
   {
     stars: 5,
     review:
-      "Such a relaxing and addicting game! I love that I can make progress even when I'm offline",
+      '“Such a relaxing and addicting game! I love that I can make progress even when I’m offline”',
     name: 'Hazel M.',
   },
   {
     stars: 5,
     review:
-      'The fantasy theme is gorgeous, and the strategic combinations keep me hooked. Moo and Lulu are awesome!',
+      '“The fantasy theme is gorgeous, and the strategic combinations keep me hooked. Moo and Lulu are awesome!”',
     name: 'Dan P.',
   },
   {
     stars: 5,
     review:
-      'The enemies are so cute… and deadly. Love the balance between idle and active gameplay.',
+      '“The enemies are so cute… and deadly. Love the balance between idle and active gameplay.”',
     name: 'Kira L.',
   },
   {
     stars: 5,
     review:
-      "Definitely one of the most charming tower defense games I've ever played. Story + strategy = win!",
+      '“Definitely one of the most charming tower defense games I’ve ever played. Story + strategy = win!”',
     name: 'Tom W.',
   },
 ];
 
 //Swiper
-const swiper = new Swiper('.swiper', {
-  modules: [Keyboard, Pagination],
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-  },
+const swiper = new Swiper('.reviewes-slider', {
+  modules: [Pagination],  
   pagination: {
-    el: '.swiper-pagination',
+    el: '.reviewes-slider-pagination',
     clickable: true,
   },
   // Cursor
