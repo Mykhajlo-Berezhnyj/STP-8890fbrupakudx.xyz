@@ -1,0 +1,88 @@
+:root {
+  /* Font families */
+  --font-main: 'Jura', sans-serif;
+  --font-decor: 'Coiny', sans-serif;
+  --font-ui: 'Montserrat', sans-serif;
+
+  /* Font weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* Font sizes */
+  --h1-size: 45px;
+  --h2-size: 32px;
+  --h3-size: 25px;
+  --h4-size: 16px;
+  --h5-size: 15px;
+  --h6-size: 12px;
+  --h7-size: 12px;
+  --text-size: 16px;
+}
+
+@include media(desktop) {
+  :root {
+    --h1-size: 80px;
+    --h2-size: 50px;
+    --h3-size: 32px;
+    --h4-size: 20px;
+    --text-size: 20px;
+  }
+}
+
+body {
+  background: $_main_bg_color;
+  color: $_main_color;
+  font-family: var(--font-main), sans-serif;
+  font-size: var(--h4-size);
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+h1 {
+  font-family: var(--font-decor);
+  font-size: var(--h1-size);
+  text-shadow: -3px -3px 0 black, 3px -3px 0 black, -3px 3px 0 black,
+    3px 3px 0 black;
+}
+
+h2 {
+  font-family: var(--font-decor);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 22px;
+  color: black;
+  // -webkit-text-stroke: 0.5px #ffffff;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white,
+    1px 1px 0 white;
+
+  @include media(desktop) {
+    font-size: var(--h2-size);
+  }
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+h5 {
+  font-size: var(--h5-size);
+}
+
+h6 {
+  font-size: var(--h6-size);
+}
+
+section {
+  @include section;
+}
+
+.container {
+  @include container;
+}

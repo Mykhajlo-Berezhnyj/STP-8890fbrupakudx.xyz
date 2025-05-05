@@ -5,9 +5,8 @@
   }
 }
 
-.container {
+.hero-container {
   @include container;
-  // position: relative;
   display: flex;
   flex-direction: column;
   @include media(desktop) {
@@ -16,7 +15,7 @@
 }
 
 .hero-right {
-  padding-bottom: 9px;
+  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -129,7 +128,7 @@
   height: 212px;
   // top: -252.41px;
   // left: 27.5px;
-  margin-right: -0.21px;
+  padding-left: 2px;
   margin-bottom: 40.41px;
   transform: rotate(5.44deg);
   order: -1;
