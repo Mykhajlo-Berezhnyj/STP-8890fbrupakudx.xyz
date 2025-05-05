@@ -1,24 +1,30 @@
 .hero {
-  padding-top: 333px;
+  padding-top: 56px;
   @include media(desktop) {
     padding-top: 150px;
   }
 }
 
-.container {
+.hero-container {
   @include container;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  @include media(desktop) {
+    flex-direction: row;
+  }
 }
 
 .hero-right {
-  padding-bottom: 9px;
+  padding-bottom: 8px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 288px;
+  order: 1;
   @include media(desktop) {
     padding-bottom: 105px;
     width: 552px;
+    order: -1;
   }
 }
 
@@ -55,11 +61,13 @@
   text-shadow: 2px 2px 2px #000000;
 
   @include media(desktop) {
-    position: absolute;
-    top: 324px;
-    left: 36px;
+    // top: 324px;
+    // left: 36px;
     width: 349px;
     height: 68px;
+    margin-top: 28px;
+    order: 4;
+    margin: 0;
     margin-top: 28px;
   }
 }
@@ -92,16 +100,13 @@
 }
 
 [data-fancybox]:hover [data-video-thumb] {
-  transform: translate(-50%, -5%) scale(1);
+  transform: translate(-50%, 160%) scale(1);
   opacity: 1;
   width: 200px;
   @include media(desktop) {
     width: 350px;
-    transform: translate(-150%, -70%) scale(1);
+    transform: translate(-150%, -50%) scale(1);
   }
-}
-
-[data-video-link] {
 }
 
 [data-video-thumb] {
@@ -117,16 +122,16 @@
 .video-title {
   text-decoration: underline;
 }
-.gplay-button {
-}
 
 .tumb {
-  position: absolute;
   max-width: 269.27px;
   height: 212px;
-  top: -252.41px;
-  left: 27.5px;
+  // top: -252.41px;
+  // left: 27.5px;
+  padding-left: 2px;
+  margin-bottom: 40.41px;
   transform: rotate(5.44deg);
+  order: -1;
 
   @include media(desktop) {
     max-width: 606px;
@@ -134,6 +139,9 @@
     top: 35px;
     left: 575px;
     transform: rotate(0deg);
+    order: 1;
+    margin-right: -17px;
+    padding-top: 32px;
   }
 }
 
