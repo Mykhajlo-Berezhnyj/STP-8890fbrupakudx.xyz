@@ -1,0 +1,146 @@
+.extrablocks-icon {
+  width: 58.65px;
+  height: 39.8px;
+  top: 2731.25px;
+  left: -25.12px;
+  transform: rotate(23.13deg) translate(-38px, 20px);
+
+  @include media(desktop) {
+    width: 94px;
+    height: 63.79px;
+    transform: rotate(23.13deg) translate(-38px, 20px);
+  }
+}
+
+.h2-extrablock {
+  margin-bottom: 78px;
+  align-items: start;
+  text-align: left;
+  @include media(desktop) {
+    margin-bottom: 162.45px;
+  }
+}
+
+.h2-extrablock:hover {
+  transform: scale(1.05);
+}
+
+.extrablocks-card {
+  width: 160px;
+  height: 347px;
+  border-radius: 6.05px;
+  background: linear-gradient(180deg, #161356 0%, #89318c 100%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  box-shadow: 8px 11px 13.5px 0px #00000059;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+
+  @include media(desktop) {
+    width: 264px;
+    height: 574px;
+    border-radius: 10px;
+  }
+}
+
+.extrablocks-card:hover {
+  transform: scale(1.1);
+  background: linear-gradient(0deg, #161356 0%, #89318c 100%),
+    linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+  box-shadow: 8px 11px 13.5px 0px #00000059;
+}
+
+.rectangle-img {
+  width: 160px;
+
+  @include media(desktop) {
+    width: 264px;
+  }
+}
+
+.title-card {
+  width: 96.24px;
+  height: 19px;
+  font-family: var(--font-decor);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18.14px;
+  align-items: center;
+  transform: translateY(-35.97px);
+  margin-bottom: 5.4px;
+
+  @include media(desktop) {
+    width: 205px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    transform: translateY(-59.5px);
+    margin-bottom: 10.5px;
+  }
+}
+
+.extrablocks-img {
+  width: 121px;
+  margin-bottom: 36.88px;
+  transition: transform 0.6s ease;
+
+  @include media(desktop) {
+    width: 200px;
+    margin-bottom: 10.5px;
+    margin-bottom: 61px;
+  }
+}
+
+.extrablocks-img:hover {
+  transform: rotate(720deg);
+}
+
+.extrablocks-text {
+  font-weight: 400;
+  font-size: 10.88px;
+  line-height: 18.14px;
+  text-align: center;
+  padding: 0 2px;
+  transition: transform 0.3s ease, font-size 0.3s ease;
+
+  @include media(desktop) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+.extrablocks-span {
+  font-weight: 700;
+  font-size: 10.88px;
+  line-height: 18.14px;
+}
+
+.extrablocks-text:hover {
+  transform: scale(1.07) translateY(-4px);
+}
+
+#extrablocks-swiper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+#extrablocks-swiper .swiper-pagination {
+  text-align: center;
+}
+
+#extrablocks-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 9px;
+  height: 9px;
+  background-color: #ffe066;
+}
+
+#extrablocks-swiper .swiper-pagination-bullet {
+  background-color: #000;
+  opacity: 1;
+}
