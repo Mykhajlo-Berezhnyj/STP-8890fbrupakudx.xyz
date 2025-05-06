@@ -1,8 +1,6 @@
 .main-characters-section {
-  padding-top: 66px;
-  background-image: url('../img/main-characters/main-characters-flashlight-mob.png');
-  background-position: center top;
-  background-repeat: no-repeat;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .main-characters-container {
@@ -12,6 +10,14 @@
   padding-right: 16px;
   padding-bottom: 40px;
   position: relative;
+
+  background-image: url('../img/main-characters/main-characters-flashlight-mob.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+
+  background-position: -60px -40px;
+  background-size: 900px;
+  padding-top: 65px;
 }
 
 .main-characters-title {
@@ -27,8 +33,10 @@
 
 .main-characters-img {
   position: absolute;
-  top: -33px;
+  top: 32px;
   right: 1px;
+  width: 37px;
+  height: 40px;
 }
 
 .main-characters-slider-container {
@@ -58,16 +66,16 @@
 }
 
 .main-characters-slider .main-characters-slider-item-moo {
-  background-image: url('../img/main-characters/main-characters-moo-title-mob.png');
+  background-image: url('../img/main-characters/main-characters-title-img1-mob.png');
 }
 .main-characters-slider .main-characters-slider-item-lulu {
-  background-image: url('../img/main-characters/main-characters-lulu-title-mob.png');
+  background-image: url('../img/main-characters/main-characters-title-img2-mob.png');
 }
 .main-characters-slider .main-characters-slider-item-bramble {
-  background-image: url('../img/main-characters/main-characters-bramble-title-mob.png');
+  background-image: url('../img/main-characters/main-characters-title-img3-mob.png');
 }
 .main-characters-slider .main-characters-slider-item-foglings {
-  background-image: url('../img/main-characters/main-characters-foglings-title-mob.png');
+  background-image: url('../img/main-characters/main-characters-title-img4-mob.png');
 }
 
 .main-characters-slider-item-title {
@@ -78,8 +86,8 @@
   margin-bottom: 69px;
 }
 .main-characters-slider-img {
-    margin-left: auto;
-    margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 24px;
   width: 145px;
 }
@@ -108,10 +116,7 @@
 
 @media only screen and (min-width: 1200px) {
   .main-characters-section {
-    padding-top: 215px;
-    background-image: url('../img/main-characters/main-characters-flashlight-desk.png');
-    background-position: center top;
-    background-repeat: no-repeat;
+    margin: 0 auto;
   }
 
   .main-characters-container {
@@ -120,12 +125,19 @@
     padding-left: 36px;
     padding-right: 36px;
     padding-bottom: 120px;
-
     position: relative;
+
+    background-image: url('../img/main-characters/main-characters-flashlight-desk.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+
+    background-position: -113px 50px;
+    background-size: auto;
+    padding-top: 202px;
   }
 
   .main-characters-title {
-    margin-bottom: 280px;
+    margin-bottom: 191px;
     font-weight: 400;
     font-size: 50px;
     line-height: 0.44;
@@ -133,8 +145,10 @@
 
   .main-characters-img {
     position: absolute;
-    top: -110px;
+    top: 90px;
     right: 10px;
+    width: 97px;
+    height: 105px;
   }
 
   .main-characters-slider-container {
@@ -151,16 +165,16 @@
     background-repeat: no-repeat;
   }
   .main-characters-slider .main-characters-slider-item-moo {
-    background-image: url('../img/main-characters/main-characters-moo-title-desk.png');
+    background-image: url('../img/main-characters/main-characters-title-img1-desk.png');
   }
   .main-characters-slider .main-characters-slider-item-lulu {
-    background-image: url('../img/main-characters/main-characters-lulu-title-desk.png');
+    background-image: url('../img/main-characters/main-characters-title-img2-desk.png');
   }
   .main-characters-slider .main-characters-slider-item-bramble {
-    background-image: url('../img/main-characters/main-characters-bramble-title-desk.png');
+    background-image: url('../img/main-characters/main-characters-title-img3-desk.png');
   }
   .main-characters-slider .main-characters-slider-item-foglings {
-    background-image: url('../img/main-characters/main-characters-foglings-title-desk.png');
+    background-image: url('../img/main-characters/main-characters-title-img4-desk.png');
   }
 
   .main-characters-slider-item-title {
