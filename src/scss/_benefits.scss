@@ -1,0 +1,180 @@
+[data-benefits] {
+  position: relative;
+  background-image: url('/img/flashlight-mob.png');
+  background-position: right -65px top -55px;
+  background-repeat: no-repeat;
+  background-size: auto 150px;
+
+  @include media(desktop) {
+    background-image: url('/img/flashlight-desktop.png');
+    background-position: right -65px top -40px;
+    background-size: auto 220px;
+  }
+}
+
+.benefits-icon {
+  width: 41.82px;
+  height: 49.18px;
+  position: absolute;
+  left: -17.57px;
+  top: 0.13px;
+  transform: rotate(14.03deg);
+
+  @include media(desktop) {
+    width: 75.76px;
+    height: 89.09px;
+  }
+}
+
+// .container {
+//   @include container;
+// }
+
+// [data-flashlight] {
+//   width: 927.38px;
+//   height: 251.8px;
+//   top: 138px;
+//   right: 100.35px;
+//   transform: rotate(0.45deg);
+//   background-image: url('/img/flashlight-mobile1x.webp');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
+
+.benefits-title {
+  margin-bottom: 81.02px;
+  width: 115px;
+  height: 20px;
+  padding-left: 4px;
+  font-family: var(--font-decor);
+  font-size: var(--h3-size);
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #000000;
+  -webkit-text-stroke: 1px #ffffff;
+
+  @include media(desktop) {
+    font-size: 50px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 288px;
+  gap: 15px;
+
+  @include media(desktop) {
+    padding: 212.91px 120px 16px 72px;
+    gap: 19px;
+    max-width: 1136px;
+  }
+}
+
+.benefits-title-item {
+  font-family: var(--font-main);
+  font-size: var(--h4-size);
+  font-weight: 700;
+  line-height: 22px;
+  margin-bottom: 8px;
+
+  @include media(desktop) {
+    transform: translate(360px, 80px);
+  }
+}
+
+// .benefits-item:nth-child(3) .benefits-title-item {
+//   margin-bottom: 8px;
+// }
+
+.item-wrapper {
+  max-width: 288px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 17px;
+  background-image: image-set(
+      url('/img/benefits/benefis-line-shadow-1x.png') 1x,
+      url('/img/benefits/benefis-line-shadow-2x.png') 2x
+    ),
+    image-set(
+      url('/img/benefits/benefis-line-1x.png') 1x,
+      url('/img/benefits/benefis-line-2x.png') 2x
+    );
+  background-repeat: no-repeat;
+  background-position: left 94px bottom 0, left 96px bottom 0;
+  @include media(desktop) {
+    max-width: 100%;
+    gap: 192px;
+    background-image: image-set(
+      url('/img/benefits/benefis-line-desktop1x.png') 1x,
+      url('/img/benefits/benefis-line-desktop2x.png') 2x
+    );
+    background-repeat: no-repeat;
+    background-position: left 168px bottom 0;
+  }
+}
+
+.benefits-img {
+  display: inline-block;
+  width: 104px;
+  height: 86px;
+  border-radius: 10px;
+  border: 2px solid #f4ec8a;
+  box-shadow: 0 0 15px #f4ec8a;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  @include media(desktop) {
+    width: 168px;
+    height: 139px;
+  }
+}
+
+.item-wrapper:hover {
+  transform: scale(1.05) translateX(5px);
+  overflow: hidden;
+}
+
+.item-wrapper:hover .benefits-img {
+  border-color: #fff8b0;
+  box-shadow: 0 0 20px #ffffc8b3;
+}
+
+.benefits-img:hover {
+  transform: rotateZ(720deg);
+  transition: transform 0.3s ease;
+}
+
+.benefits-text {
+  display: inline-block;
+  font-family: var(--font-main);
+  font-size: var(--h5-size);
+  font-weight: 300;
+  line-height: 16px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  border-bottom-left-radius: 3px;
+  border-bottom: 1px solid #f4ec8a;
+  // box-shadow: 0 2px 3px #ffffc8b3, 0 -2px 3px transparent;
+
+  @include media(desktop) {
+    max-width: 576px;
+    font-size: var(--h4-size);
+    font-weight: 400;
+    line-height: 30px;
+    padding-bottom: 3px;
+    padding-left: 12px;
+  }
+}
+
+.benefits-text:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+}
+.item-wrapper:nth-of-type(3) {
+  gap: 0;
+  font-size: 14.85px;
+}
