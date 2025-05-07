@@ -2,21 +2,24 @@
 // @import './common/mixins';
 // @import './common/reset';
 // @import './common/vars';
+
+@import './global';
 @import './header';
-@import './hero.scss';
+@import './hero';
+@import './benefits';
+@import './game-description';
+@import './gallery';
+@import './extrablocks';
+@import './key-feautures';
+@import './main-characters';
+@import './reviewes';
+@import './main-mobile-menu';
+@import './footer';
+@import './main-cookies';
 @import './pages/cookies-policy';
 @import './pages/home';
 @import './pages/privacy-policy';
 @import './pages/terms-сonditions';
-@import './extrablocks';
-@import './footer';
-@import './gallery';
-@import './game-description';
-@import './key-feautures';
-@import './main-characters';
-@import './main-cookies';
-@import './main-mobile-menu';
-@import './reviewes';
 
 :root {
   /* Font families */
@@ -60,25 +63,3 @@ body {
 body.no-scroll {
   overflow: hidden;
 }
-
-// @import './common/breakpoints';
-// @import './common/mixins';
-// @import './common/reset';
-// @import './common/vars';
-@import './global';
-@import './header';
-@import './hero';
-@import './benefits';
-@import './game-description';
-@import './gallery';
-@import './extrablocks';
-@import './key-feautures';
-@import './main-characters';
-@import './reviewes';
-@import './main-mobile-menu';
-@import './footer';
-@import './main-cookies';
-@import './pages/cookies-policy';
-@import './pages/home';
-@import './pages/privacy-policy';
-@import './pages/terms-сonditions';
