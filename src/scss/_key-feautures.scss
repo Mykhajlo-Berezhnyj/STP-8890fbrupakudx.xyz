@@ -1,0 +1,114 @@
+.key-features-container {
+    max-width: 320px;
+    margin: 0 auto;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  
+  .key-features-title {
+    font-family: var(--font-decor);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.1;
+    text-align: left;
+    color: #000;
+    margin-bottom: 80px;
+    -webkit-text-stroke: 0.4px white;
+  }
+  
+  .key-features-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+  }
+  
+  .key-features-list li {    
+      position: relative;
+    }
+  
+  
+  
+  .key-features-list li:nth-child(odd) {
+    color: #fff;
+    max-width: 230px;
+  }
+  
+  .key-features-list li:nth-child(even) {
+    color: #fff;
+    padding-left: 75px;
+  }
+  
+  
+  .key-features-list li:nth-child(1)::after, 
+  .key-features-list li:nth-child(5)::after,
+  .key-features-list li:nth-child(7)::after {
+      content: '';
+      position: absolute;
+      left: 0px;
+      bottom: -2px;
+    
+      width: 302px;  
+      height: 100px;  
+      
+      background-image: url('../img/key-features/key-features1.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;    
+    }
+  
+    .key-features-list li:nth-child(2)::after, 
+    .key-features-list li:nth-child(4)::after,
+    .key-features-list li:nth-child(6)::after {
+      content: '';
+      position: absolute;
+      left: -15px;
+      bottom: -2px;
+    
+      width: 302px;  
+      height: 100px;  
+      
+      background-image: url('../img/key-features/key-features2.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;    
+  
+    }
+    .key-features-list li:nth-child(3)::after 
+    {
+      content: '';
+      position: absolute;
+      left: 0px;
+      bottom: -2px;
+    
+      width: 302px;  
+      height: 100px;  
+      
+      background-image: url('../img/key-features/key-features3.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;    
+  
+      }
+  
+      .key-features-list li:nth-child(8)::after{
+          content: '';
+      position: absolute;
+      left: -15px;
+      bottom: -2px;
+    
+      width: 302px;  
+      height: 100px;  
+      
+      background-image: url('../img/key-features/key-features4.png');
+      background-repeat: no-repeat;
+      background-position: center bottom;   
+  
+      } 
+  
+  
+  
+
+  
+    @media screen and (min-width: 1200px) {    
+  
+    }
