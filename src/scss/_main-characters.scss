@@ -1,7 +1,42 @@
 .main-characters-section {
   padding-top: 0;
   padding-bottom: 0;
+  position: relative;
 }
+
+//Flash mob
+.main-characters-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../img/main-characters/main-characters-flashlight-mob.png') ;
+  background-position: center top;
+  background-repeat: no-repeat;  
+  background-position: -60px -47px;
+   background-size: auto 250px;
+}
+
+@media only screen and (min-width: 655px) {
+  .main-characters-section::before {
+    content: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+
+//Flash desk
+  .main-characters-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../img/main-characters/main-characters-flashlight-desk.png') ;
+    background-position: center top;
+    background-repeat: no-repeat; 
+    background-position: -113px 50px;
+     background-size: auto;
+  }
+}
+
 
 .main-characters-container {
   max-width: 320px;
@@ -10,13 +45,6 @@
   padding-right: 16px;
   padding-bottom: 40px;
   position: relative;
-
-  background-image: url('../img/main-characters/main-characters-flashlight-mob.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-
-  background-position: -60px -40px;
-  background-size: 900px;
   padding-top: 65px;
 }
 
@@ -126,13 +154,6 @@
     padding-right: 36px;
     padding-bottom: 120px;
     position: relative;
-
-    background-image: url('../img/main-characters/main-characters-flashlight-desk.png');
-    background-position: center top;
-    background-repeat: no-repeat;
-
-    background-position: -113px 50px;
-    background-size: auto;
     padding-top: 202px;
   }
 

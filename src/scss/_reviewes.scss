@@ -1,9 +1,52 @@
 .reviewes-section {
   padding-top: 57px;
-  background-image: url('../img/reviewes/reviewes-flashlight-mob.png');
-  background-position: center top;
-  background-repeat: no-repeat;
+  // background-image: url('../img/reviewes/reviewes-flashlight-mob.png');
+  // background-position: center top;
+  // background-repeat: no-repeat;
+  position: relative;
 }
+
+//Flash mob
+
+.reviewes-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('../img/reviewes/reviewes-flashlight-mob.png') ;
+  background-position: center top;
+  background-repeat: no-repeat;  
+  width: 100vw;
+  background-position: calc(100% + 70px) -15px;
+  background-size: auto 150px;
+
+}
+
+@media only screen and (min-width: 655px) {
+  .reviewes-section::before {
+    content: none;
+  }
+}
+
+
+
+//Flash desk
+
+@media only screen and (min-width: 1200px) {
+.reviewes-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: url('../img/reviewes/reviewes-flashlight-desk.png') ;
+    background-position: center top;
+    background-repeat: no-repeat;  
+    width: 100vw;
+    background-position: calc(100% + 70px) 50px;
+     background-size: auto;
+
+  }
+}
+
+
 
 .reviewes-container {
   max-width: 320px;
@@ -98,9 +141,9 @@
 @media only screen and (min-width: 1200px) {
   .reviewes-section {
     padding-top: 235px;
-    background-image: url('../img/reviewes/reviewes-flashlight-desk.png');
-    background-position: center top;
-    background-repeat: no-repeat;
+    // background-image: url('../img/reviewes/reviewes-flashlight-desk.png');
+    // background-position: center top;
+    // background-repeat: no-repeat;
   }
 
   .reviewes-container {
