@@ -109,6 +109,154 @@
   
 
   
-    @media screen and (min-width: 1200px) {    
-  
-    }
+      @media screen and (min-width: 1200px) {
+        .key-features-container {
+          max-width: 1200px;
+          padding-left: 36px;
+          padding-right: 36px;
+          
+      
+          background-image: url('../img/key-features/key-features-main-photo.png');
+          background-repeat: no-repeat;
+          background-position: 400px 280px;
+          background-size: 400px 400px;
+        }
+      
+        .key-features-title {
+          margin-bottom: 236px;
+          font-weight: 400;
+          font-size: 50px;
+          line-height: 0.44;
+        }
+      
+        .key-features-list li:nth-child(odd) {
+          max-width: 341px;
+        }
+      
+        .key-features-list li:nth-child(even) {
+          max-width: 261px;
+          padding-left: 0;
+        }
+      
+        .key-features-list li:nth-child(1)::after {
+          content: '';
+          position: absolute;
+          left: 0px;
+          bottom: 19px;
+      
+          width: 481px;
+          height: 41px;
+          background-image: url('../img/key-features/key-features-img1-desk.png');
+          background-repeat: no-repeat;
+          background-position: center bottom;
+        }
+        .key-features-list li:nth-child(2)::after {
+          content: '';
+          position: absolute;
+          left: -155px;
+          bottom: 0px;
+      
+          width: 479px;
+          height: 59px;
+      
+          background-image: url('../img/key-features/key-features-img2-desk.png');
+          background-repeat: no-repeat;
+          background-position: center bottom;
+        }
+        .key-features-list li:nth-child(3)::after {
+          content: '';
+          position: absolute;
+          left: 0px;
+          bottom: 0px;
+      
+          width: 369px;
+          height: 71px;
+      
+          background-image: url('../img/key-features/key-features-img3-desk.png');
+          background-repeat: no-repeat;
+          background-position: center bottom;
+        }
+        .key-features-list li:nth-child(4)::after {
+          content: '';
+          position: absolute;
+          left: -106px;
+          bottom: 0px;
+      
+          width: 368px;
+          height: 71px;
+      
+      
+          background-image: url('../img/key-features/key-features-img4-desk.png');
+          background-repeat: no-repeat;
+          background-position: center bottom;
+        }
+        .key-features-list li:nth-child(5)::after {
+          content: '';
+          position: absolute;
+          left: 0px;
+          bottom: 30px;
+      
+          width: 452px;
+          height: 36px;
+      
+      
+          background-image: url('../img/key-features/key-features-img5-desk.png');
+          background-repeat: no-repeat;
+          background-position: center bottom;
+        }
+        .key-features-list li:nth-child(6)::after {
+          content: '';
+          position: absolute;
+          left: -122px;
+          bottom: 0px;
+      
+          width: 452px;
+          height: 71px;
+      
+          background-image: url('../img/key-features/key-features-img6-desk.png');
+          background-repeat: no-repeat;
+          background-position: center bottom;
+      
+        }
+        .key-features-list li:nth-child(7)::after {
+          content: '';
+          position: absolute;
+          left: -52px;
+          bottom: -13px;
+      
+          width: 362px;
+          height: 143px;
+      
+          background-image: url('../img/key-features/key-features-img7-desk.png');
+          background-repeat: no-repeat;
+          background-position: center bottom;
+        }
+      
+        .key-features-list li:nth-child(2) {
+          transform: translateX(-61px)
+        }
+        .key-features-list li:nth-child(3) {
+          // padding-right: 100px;
+          max-width: 260px;
+        }
+        .key-features-list li:nth-child(6) {    
+          transform: translateX(-62px)
+        }
+      
+        .key-features-list li:nth-child(7) {
+          margin: 0 auto;
+          transform: translateY(-68px)
+        }
+      
+        .key-features-list {
+          flex-direction: row;
+          flex-wrap: wrap;
+          row-gap: 136px;
+          justify-content: space-between;
+          column-gap: 170px;
+      
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 1.67;
+        }
+      }
