@@ -1,20 +1,45 @@
-// section {
-//   @include section;
-// }
+[data-benefits] {
+  position: relative;
+  background-image: url('/img/flashlight-mob.png');
+  background-position: right -65px top -55px;
+  background-repeat: no-repeat;
+  background-size: auto 150px;
+
+  @include media(desktop) {
+    background-image: url('/img/flashlight-desktop.png');
+    background-position: right -65px top -40px;
+    background-size: auto 220px;
+  }
+}
+
+.benefits-icon {
+  width: 41.82px;
+  height: 49.18px;
+  position: absolute;
+  left: -17.57px;
+  top: 0.13px;
+  transform: rotate(14.03deg);
+
+  @include media(desktop) {
+    width: 75.76px;
+    height: 89.09px;
+  }
+}
+
 // .container {
 //   @include container;
 // }
 
-[data-flashlight] {
-  width: 927.38px;
-  height: 251.8px;
-  top: 138px;
-  right: 100.35px;
-  transform: rotate(0.45deg);
-  background-image: url('/img/flashlight-mobile1x.webp');
-  background-size: contain;
-  background-repeat: no-repeat;
-}
+// [data-flashlight] {
+//   width: 927.38px;
+//   height: 251.8px;
+//   top: 138px;
+//   right: 100.35px;
+//   transform: rotate(0.45deg);
+//   background-image: url('/img/flashlight-mobile1x.webp');
+//   background-size: contain;
+//   background-repeat: no-repeat;
+// }
 
 .benefits-title {
   margin-bottom: 81.02px;
@@ -44,13 +69,10 @@
   gap: 15px;
 
   @include media(desktop) {
-    padding: 302px 120px 16px 72px;
+    padding: 212.91px 120px 16px 72px;
     gap: 19px;
     max-width: 1136px;
   }
-}
-
-.benefits-item {
 }
 
 .benefits-title-item {
@@ -112,10 +134,18 @@
 }
 
 .item-wrapper:hover {
-  border-color: #fff8b0;
-  box-shadow: 0 0 20px #ffffc8b3;
   transform: scale(1.05) translateX(5px);
   overflow: hidden;
+}
+
+.item-wrapper:hover .benefits-img {
+  border-color: #fff8b0;
+  box-shadow: 0 0 20px #ffffc8b3;
+}
+
+.benefits-img:hover {
+  transform: rotateZ(720deg);
+  transition: transform 0.3s ease;
 }
 
 .benefits-text {
@@ -140,6 +170,10 @@
   }
 }
 
+.benefits-text:hover {
+  transform: scale(1.05);
+  font-weight: bold;
+}
 .item-wrapper:nth-of-type(3) {
   gap: 0;
   font-size: 14.85px;
