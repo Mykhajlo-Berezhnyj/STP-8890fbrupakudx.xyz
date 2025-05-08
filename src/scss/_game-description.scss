@@ -1,32 +1,32 @@
 .game-description {
 }
 
-.flashlight-container {
-  background-image: url('/img/flashlight.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  width: 100vw;
-  opacity: 0.8;
-  transform: rotate(173.99deg) translate(10px, -130px);
-  margin-left: calc(-1 * ((100vw - 100%) / 2));
+// .flashlight-container {
+//   background-image: url('/img/flashlight.webp');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   height: 150px;
+//   width: 100vw;
+//   opacity: 0.8;
+//   transform: rotate(173.99deg) translate(10px, -130px);
+//   margin-left: calc(-1 * ((100vw - 100%) / 2));
 
-  @include media(desktop) {
-    background-size: 1%;
-  }
-}
+//   @include media(desktop) {
+//     background-size: 1%;
+//   }
+// }
 
-.flashlight-container:hover {
-  transform-origin: left right;
-  transform: rotate(-140deg) translate(-90px, -210px);
-}
+// .flashlight-container:hover {
+//   transform-origin: left right;
+//   transform: rotate(-140deg) translate(-90px, -210px);
+// }
 
-.flashlight-img {
-  display: block;
-  width: 100%;
-  //   height: auto;
-}
+// .flashlight-img {
+//   display: block;
+//   width: 100%;
+//   //   height: auto;
+// }
 
 .description-icon {
   width: 45.98px;
