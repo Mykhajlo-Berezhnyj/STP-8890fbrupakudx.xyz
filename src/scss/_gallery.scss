@@ -16,7 +16,11 @@
   // }
 }
 
+
 //Flash mob
+.gallery-container {
+  padding-top: 60px;
+}
 #gallery::before {
   content: '';
   position: absolute;
@@ -24,10 +28,9 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../img/main-characters/main-characters-flashlight-mob.png');
-  background-position: center top;
+  background: url('../img/main-characters/main-characters-flashlight-mob.png');  
   background-repeat: no-repeat;
-  background-position: -60px -7px;
+  background-position: -60px -17px;
   background-size: auto 250px;
   z-index: -1;
 }
@@ -41,10 +44,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../img/main-characters/main-characters-flashlight-desk.png');
-    background-position: center top;
+    background: url('../img/main-characters/main-characters-flashlight-desk.png');    
     background-repeat: no-repeat;
-    background-position: -113px 90px;
+    background-position: -113px 25px;
     background-size: auto;
   }
 }
@@ -59,17 +61,28 @@
 }
 
 .gallery-icon {
+  position: absolute;
+  top: 60px;
+  right: 0;
   width: 44.71px;
   height: 37.53px;
   //   left: calc(100% + 19px);
   //   top: -14.17px;
-  transform: translate(17.68px, 14.17px) rotate(0.81deg);
+  // transform: translate(17.68px, 14.17px) rotate(0.81deg);
 
   @include media(desktop) {
-    width: 75.76px;
-    height: 89.09px;
+    top: 100px;
+    width: 97px;
+    height: 81px;
   }
 }
+
+
+// top: 55px;
+// left: -30px;
+// width: 54px;
+
+
 
 // .container0 {
 //   max-width: 100%;
@@ -96,21 +109,21 @@
     margin-bottom: 135.29px;
   }
 }
-.gallery-icon {
-  position: relative;
-  width: 44.71px;
-  top: -122.33px;
-  right: -21.68px;
-  margin-top: -14.17px;
-  transform: rotate(-0.81deg);
-  @include media(desktop) {
-    width: 96.87px;
-    height: 81.3px;
-    top: 4150.91px;
-    right: 79.24px;
-    transform: rotate(17.99deg);
-  }
-}
+// .gallery-icon {
+//   position: relative;
+//   width: 44.71px;
+//   top: -122.33px;
+//   right: -21.68px;
+//   margin-top: -14.17px;
+//   transform: rotate(-0.81deg);
+//   @include media(desktop) {
+//     width: 96.87px;
+//     height: 81.3px;
+//     top: 4150.91px;
+//     right: 79.24px;
+//     transform: rotate(17.99deg);
+//   }
+// }
 .img-gallery {
   width: 188px;
   height: 420px;

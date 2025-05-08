@@ -4,6 +4,9 @@
 
 
 //Flash mob
+.game-description-container{
+  padding-top: 60px;
+}
 #game-description::before {
   content: '';
   position: absolute;
@@ -21,6 +24,9 @@
 
 @media only screen and (min-width: 1200px) {
   //Flash desk
+  .game-description-container{
+    padding-top: 120px;
+  }
   #game-description::before {
     content: '';
     position: absolute;
@@ -64,17 +70,36 @@
   //   height: auto;
 }
 
+// .description-icon {
+//   width: 45.98px;
+//   height: 35.5px;
+//   display: block;
+//   transform: rotate(-19.63deg) translate(0, -20px);
+//   transition: transform 0.3s ease;
+//   position: relative;
+//   right: -20px;
+//   margin-left: auto;
+//   margin-right: -20px;
+// }
+
 .description-icon {
-  width: 45.98px;
-  height: 35.5px;
-  display: block;
-  transform: rotate(-19.63deg) translate(0, -20px);
-  transition: transform 0.3s ease;
-  position: relative;
-  right: -20px;
-  margin-left: auto;
-  margin-right: -20px;
+  position: absolute;
+  width: 58.65px;
+  height: 39.8px;
+  top: 50px;
+  right: 0px;
+  // transform: rotate(23.13deg) translate(-38px, 20px);
+
+  @include media(desktop) {
+    width: 94px;
+    height: 63.79px;
+    top: 170px;
+    right: 0px;
+    // transform: rotate(23.13deg) translate(-38px, 20px);
+  }
 }
+
+
 
 .container {
   padding-left: 14.68px;
