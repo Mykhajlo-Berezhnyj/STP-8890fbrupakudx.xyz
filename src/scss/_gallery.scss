@@ -1,17 +1,17 @@
-#gallery {
-  position: relative;
-  background-image: url('/img/flashlight-mob.png');
-  background-position: calc((100% + 320px) / 2 - 30px) -20px;
-  background-repeat: no-repeat;
-  background-size: auto 150px;
-  // transform: rotate(0.81deg);
+// #gallery {
+//   position: relative;
+//   background-image: url('/img/flashlight-mob.png');
+//   background-position: calc((100% + 320px) / 2 - 30px) -20px;
+//   background-repeat: no-repeat;
+//   background-size: auto 150px;
+//   // transform: rotate(0.81deg);
 
-  @include media(desktop) {
-    background-image: url('/img/flashlight-desk.png');
-    background-position: -25px -15px;
-    background-size: auto 220px;
-  }
-}
+//   @include media(desktop) {
+//     background-image: url('/img/flashlight-desk.png');
+//     background-position: -25px -15px;
+//     background-size: auto 220px;
+//   }
+// }
 
 .title-wrapper {
   position: relative;

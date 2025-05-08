@@ -1,14 +1,67 @@
-[data-benefits] {
+.r-section {
   position: relative;
-  background-image: url('/img/flashlight-mob.png');
-  background-position: right -65px top -55px;
-  background-repeat: no-repeat;
-  background-size: auto 150px;
+}
+
+.benefits-title {
+  display: block;
+  margin-bottom: 81.02px;
+  width: 115px;
+  height: 20px;
+  padding-left: 4px;
+  font-family: var(--font-decor);
+  font-size: var(--h3-size);
+  font-weight: 400;
+  line-height: 22px;
+  text-align: left;
+  color: #000000;
+  -webkit-text-stroke: 1px #ffffff;
 
   @include media(desktop) {
-    background-image: url('/img/flashlight-desktop.png');
-    background-position: right -65px top -40px;
-    background-size: auto 220px;
+    font-size: 50px;
+    line-height: 22px;
+    font-weight: 700;
+  }
+}
+
+.container-rf::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('/img/reviewes/reviewes-flashlight-mob.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-position: calc(100% + 80px) -45px;
+  background-size: auto 150px;
+  transform: rotate(-5deg);
+}
+
+// @media only screen and (min-width: 655px) {
+//   r-section::before {
+//     content: none;
+//   }
+// }
+
+//Flash desk
+
+@media only screen and (min-width: 1200px) {
+  .container-rf::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('/img/reviewes/reviewes-flashlight-desk.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-position: calc(100%) -160px;
+    background-size: auto;
+    transform: rotate(-5deg);
   }
 }
 
@@ -41,26 +94,6 @@
 //   background-repeat: no-repeat;
 // }
 
-.benefits-title {
-  margin-bottom: 81.02px;
-  width: 115px;
-  height: 20px;
-  padding-left: 4px;
-  font-family: var(--font-decor);
-  font-size: var(--h3-size);
-  font-weight: 400;
-  line-height: 22px;
-  text-align: left;
-  color: #000000;
-  -webkit-text-stroke: 1px #ffffff;
-
-  @include media(desktop) {
-    font-size: 50px;
-    line-height: 22px;
-    font-weight: 700;
-  }
-}
-
 .benefits-list {
   display: flex;
   flex-direction: column;
@@ -69,7 +102,7 @@
   gap: 15px;
 
   @include media(desktop) {
-    padding: 212.91px 120px 16px 72px;
+    padding: 72px 120px 16px 72px;
     gap: 19px;
     max-width: 1136px;
   }
