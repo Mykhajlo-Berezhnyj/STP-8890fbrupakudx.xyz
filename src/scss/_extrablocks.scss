@@ -47,14 +47,14 @@
   width: 58.65px;
   height: 39.8px;
   top: 50px;
-  left: 0px;
+  left: -10px;
   // transform: rotate(23.13deg) translate(-38px, 20px);
 
   @include media(desktop) {
     width: 94px;
     height: 63.79px;
     top: 100px;
-    left: 0px;
+    left: 200px;
     // transform: rotate(23.13deg) translate(-38px, 20px);
   }
 }
