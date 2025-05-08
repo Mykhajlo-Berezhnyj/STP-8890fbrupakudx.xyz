@@ -1,17 +1,55 @@
-// #gallery {
-//   position: relative;
-//   background-image: url('/img/flashlight-mob.png');
-//   background-position: calc((100% + 320px) / 2 - 30px) -20px;
-//   background-repeat: no-repeat;
-//   background-size: auto 150px;
-//   // transform: rotate(0.81deg);
 
-//   @include media(desktop) {
-//     background-image: url('/img/flashlight-desk.png');
-//     background-position: -25px -15px;
-//     background-size: auto 220px;
-//   }
-// }
+#gallery {
+  position: relative;
+
+  
+  // background-image: url('/img/flashlight-mob.png');
+  // background-position: calc((100% + 320px) / 2 - 30px) -20px;
+  // background-repeat: no-repeat;
+  // background-size: auto 150px;
+  // transform: rotate(0.81deg);
+
+  // @include media(desktop) {
+  //   background-image: url('/img/flashlight-desk.png');
+  //   background-position: -25px -15px;
+  //   background-size: auto 220px;
+  // }
+}
+
+//Flash mob
+#gallery::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../img/main-characters/main-characters-flashlight-mob.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-position: -60px -7px;
+  background-size: auto 250px;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1200px) {
+  //Flash desk
+  #gallery::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/main-characters/main-characters-flashlight-desk.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-position: -113px 90px;
+    background-size: auto;
+  }
+}
+=======
+
 
 .title-wrapper {
   position: relative;

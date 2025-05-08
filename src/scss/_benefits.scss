@@ -1,6 +1,10 @@
-.r-section {
+
+#benefits {
   position: relative;
 }
+
+
+
 
 .benefits-title {
   display: block;
@@ -23,47 +27,87 @@
   }
 }
 
-.container-rf::before {
+//Flashlight mob
+#benefits::before {
   content: '';
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('/img/reviewes/reviewes-flashlight-mob.png');
+
+  background: url('../img/key-features/key-features-flashlight-mob.png');
   background-position: center top;
   background-repeat: no-repeat;
   width: 100vw;
-  background-position: calc(100% + 80px) -45px;
+  background-position: calc(100% + 70px) -15px;
   background-size: auto 150px;
-  transform: rotate(-5deg);
+  z-index: -1;
 }
 
-// @media only screen and (min-width: 655px) {
-//   r-section::before {
-//     content: none;
-//   }
+//Flashlight desk
+@media only screen and (min-width: 1200px) {
+  #benefits::before {
+// =======
+//   background: url('/img/reviewes/reviewes-flashlight-mob.png');
+//   background-position: center top;
+//   background-repeat: no-repeat;
+//   width: 100vw;
+//   background-position: calc(100% + 80px) -45px;
+//   background-size: auto 150px;
+//   transform: rotate(-5deg);
 // }
 
-//Flash desk
+// // @media only screen and (min-width: 655px) {
+// //   r-section::before {
+// //     content: none;
+// //   }
+// // }
 
-@media only screen and (min-width: 1200px) {
-  .container-rf::before {
+// //Flash desk
+
+// @media only screen and (min-width: 1200px) {
+//   .container-rf::before {
+// >>>>>>> main
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('/img/reviewes/reviewes-flashlight-desk.png');
+
+    background: url('../img/key-features/key-features-flashlight-desk.png');
     background-position: center top;
     background-repeat: no-repeat;
-    width: 100%;
-    background-position: calc(100%) -160px;
+    width: 100vw;
+    background-position: calc(100% + 70px) 50px;
     background-size: auto;
-    transform: rotate(-5deg);
+// =======
+//     background: url('/img/reviewes/reviewes-flashlight-desk.png');
+//     background-position: center top;
+//     background-repeat: no-repeat;
+//     width: 100%;
+//     background-position: calc(100%) -160px;
+//     background-size: auto;
+//     transform: rotate(-5deg);
+// >>>>>>> main
   }
 }
+
+
+// [data-benefits] {
+//   position: relative;
+//   background-image: url('/img/flashlight-mob.png');
+//   background-position: right -65px top -55px;
+//   background-repeat: no-repeat;
+//   background-size: auto 150px;
+
+//   @include media(desktop) {
+//     background-image: url('/img/flashlight-desktop.png');
+//     background-position: right -65px top -40px;
+//     background-size: auto 220px;
+//   }
+// }
 
 .benefits-icon {
   width: 41.82px;
