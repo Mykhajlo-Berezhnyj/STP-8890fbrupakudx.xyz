@@ -21,10 +21,10 @@ const swiper = new Swiper('#gallery-swiper', {
       },
     },
     1200: {
-      slidesPerView: 5,
+      slidesPerView: 3,
       spaceBetween: 20,
-      slidesOffsetBefore: 127,
-      slidesOffsetAfter: 127,
+      // slidesOffsetBefore: 127,
+      // slidesOffsetAfter: 127,
       centeredSlides: true,
     },
   },
