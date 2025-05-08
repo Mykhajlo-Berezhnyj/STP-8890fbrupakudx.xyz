@@ -1,6 +1,7 @@
 .privacy-policy-container {
   max-width: 320px;
-  padding: 20px 16px 60px; 
+  padding-left: 16px; 
+  padding-right: 16px;
   margin: 0 auto;  
   color: #fff; 
 }
@@ -73,7 +74,8 @@
 @media screen and (min-width: 1200px) {
   .privacy-policy-container {
     max-width: 1200px;
-    padding: 80px 36px 120px;
+    padding-left: 36px;
+    padding-left: 36px;
   }
   .privacy-policy-info {
     gap: 30px;
