@@ -68,7 +68,7 @@
   font-family: var(--font-decor);
   font-weight: 400;
   font-size: 12px;
-  line-height: 18.14px;
+  line-height: 18px;
   align-items: center;
   transform: translateY(-35.97px);
   margin-bottom: 5.4px;
@@ -100,16 +100,15 @@
 }
 
 .extrablocks-text {
-  font-weight: 400;
-  font-size: 10.88px;
-  line-height: 18.14px;
+  font-weight: 300;
+  font-size: 9, 82px;
+  line-height: 18.42px;
   text-align: center;
   padding: 0 2px;
   transition: transform 0.3s ease, font-size 0.3s ease;
 
   @include media(desktop) {
-    font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 30px;
   }
 }
