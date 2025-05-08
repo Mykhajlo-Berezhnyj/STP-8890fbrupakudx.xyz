@@ -30,21 +30,21 @@ export default defineConfig(({ command }) => {
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
-      ViteImageOptimizer({
-        exclude: /^sprite.svg$/,
-        png: {
-          quality: 60,
-        },
-        jpeg: {
-          quality: 60,
-        },
-        jpg: {
-          quality: 60,
-        },
-        webp: {
-          quality: 60,
-        },
-      }),
+      // ViteImageOptimizer({
+      //   exclude: /^sprite.svg$/,
+      //   png: {
+      //     quality: 60,
+      //   },
+      //   jpeg: {
+      //     quality: 60,
+      //   },
+      //   jpg: {
+      //     quality: 60,
+      //   },
+      //   webp: {
+      //     quality: 60,
+      //   },
+      // }),
     ],
     css: {
       preprocessorOptions: {
