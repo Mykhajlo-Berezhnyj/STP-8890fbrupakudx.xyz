@@ -8,5 +8,5 @@
           </div>
             <p class="reviewes-slider-item-title">${o}</p>           
           </li>             
-        `).join("");t.insertAdjacentHTML("beforeend",i)}h(v);window.addEventListener("load",()=>{const r=document.querySelector("[data-modal]"),t=document.querySelector("[data-btn-accept]"),i=document.querySelector("[data-btn-decline]");if(localStorage.getItem("cookieConsent"))return;setTimeout(()=>{r.hidden=!1},500);const e=(s,a)=>{r.classList.add(s),localStorage.setItem("cookieConsent",a),setTimeout(()=>{r.hidden=!0,r.classList.remove(s)},600)};t.addEventListener("click",()=>{e("modal-slide-left","accepted")}),i.addEventListener("click",()=>{e("modal-slide-right","declined")})});
+        `).join("");t.insertAdjacentHTML("beforeend",i)}h(v);window.addEventListener("load",()=>{const r=document.querySelector("[data-modal]"),t=document.querySelector("[data-btn-accept]"),i=document.querySelector("[data-btn-decline]");if(localStorage.getItem("cookieConsent"))return;setTimeout(()=>{r.hidden=!1},500);const e=(s,a)=>{r.classList.add(s),localStorage.setItem("cookieConsent",a),setTimeout(()=>{r.hidden=!0,r.classList.remove(s)},400)};t.addEventListener("click",()=>{e("modal-slide-left","accepted")}),i.addEventListener("click",()=>{e("modal-slide-right","declined")})});
 //# sourceMappingURL=commonHelpers2.js.map
