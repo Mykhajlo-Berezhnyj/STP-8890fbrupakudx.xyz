@@ -1,5 +1,41 @@
-.game-description {
+#game-description {
+  position: relative;
 }
+
+
+//Flash mob
+#game-description::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../img/main-characters/main-characters-flashlight-mob.png');
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-position: -60px -7px;
+  background-size: auto 250px;
+  z-index: -1;
+}
+
+@media only screen and (min-width: 1200px) {
+  //Flash desk
+  #game-description::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/main-characters/main-characters-flashlight-desk.png');
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-position: -113px 90px;
+    background-size: auto;
+  }
+}
+
 
 .flashlight-container {
   background-image: url('/img/flashlight.webp');
