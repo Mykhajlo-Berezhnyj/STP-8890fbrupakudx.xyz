@@ -1,7 +1,7 @@
 #gallery {
   position: relative;
   background-image: url('/img/flashlight-mob.png');
-  background-position: calc((100% + 320px) / 2 - 30px) -20px;
+  background-position: calc((100% + 320px) / 2 - 60px) -20px;
   background-repeat: no-repeat;
   background-size: auto 150px;
   transform: rotate(0.81deg);
@@ -14,7 +14,7 @@
 }
 
 .title-wrapper {
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: row;
   margin-right: -14.17px;

@@ -1,8 +1,10 @@
 [data-benefits] {
   position: relative;
-  background-image: url('/img/flashlight-mob.png');
-  background-position: right -65px top -55px;
+  background-image: url('/img/reviewes/reviewes-flashlight-mob.png');
+  // background-position: right -60px top -40px;
   background-repeat: no-repeat;
+  background-position: calc(100% + 70px) -40px;
+  background-size: auto 150px;
   background-size: auto 150px;
 
   @include media(desktop) {
@@ -69,7 +71,7 @@
   gap: 15px;
 
   @include media(desktop) {
-    padding: 212.91px 120px 16px 72px;
+    padding: 72px 120px 16px 72px;
     gap: 19px;
     max-width: 1136px;
   }
@@ -170,10 +172,11 @@
   }
 }
 
-.benefits-text:hover {
-  transform: scale(1.05);
-  font-weight: bold;
-}
+// .benefits-text:hover {
+//   transform: scale(1.01);
+//   font-weight: bold;
+// }
+
 .item-wrapper:nth-of-type(3) {
   gap: 0;
   font-size: 14.85px;
