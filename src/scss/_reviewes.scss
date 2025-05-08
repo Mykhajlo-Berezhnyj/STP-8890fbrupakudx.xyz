@@ -1,52 +1,44 @@
 .reviewes-section {
-  padding-top: 57px;
-  // background-image: url('../img/reviewes/reviewes-flashlight-mob.png');
-  // background-position: center top;
-  // background-repeat: no-repeat;
+  padding-top: 67px;
   position: relative;
 }
 
 //Flash mob
 
 .reviewes-section::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url('../img/reviewes/reviewes-flashlight-mob.png') ;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../img/reviewes/reviewes-flashlight-mob.png');
   background-position: center top;
-  background-repeat: no-repeat;  
+  background-repeat: no-repeat;
   width: 100vw;
   background-position: calc(100% + 70px) -15px;
   background-size: auto 150px;
-
+  z-index: -1;
 }
-
-@media only screen and (min-width: 655px) {
-  .reviewes-section::before {
-    content: none;
-  }
-}
-
-
 
 //Flash desk
 
 @media only screen and (min-width: 1200px) {
-.reviewes-section::before {
-    content: "";
+  .reviewes-section::before {
+    content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: url('../img/reviewes/reviewes-flashlight-desk.png') ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/reviewes/reviewes-flashlight-desk.png');
     background-position: center top;
-    background-repeat: no-repeat;  
+    background-repeat: no-repeat;
     width: 100vw;
     background-position: calc(100% + 70px) 50px;
-     background-size: auto;
-
+    background-size: auto;
   }
 }
-
-
 
 .reviewes-container {
   max-width: 320px;
@@ -54,7 +46,6 @@
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 40px;
-  position: relative;
 }
 
 .reviewes-title {
@@ -69,8 +60,9 @@
 
 .reviewes-img {
   position: absolute;
-  top: -43px;
-  left: 0;
+  top: 30px;
+  left: -30px;
+  width: 62px;
 }
 
 .reviewes-slider-container {
@@ -127,7 +119,8 @@
   position: static;
 }
 
-.reviewes-slider-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+.reviewes-slider-pagination
+  .swiper-pagination-bullet.swiper-pagination-bullet-active {
   width: 9px;
   height: 9px;
   background-color: #ffe066;
@@ -141,9 +134,6 @@
 @media only screen and (min-width: 1200px) {
   .reviewes-section {
     padding-top: 235px;
-    // background-image: url('../img/reviewes/reviewes-flashlight-desk.png');
-    // background-position: center top;
-    // background-repeat: no-repeat;
   }
 
   .reviewes-container {
@@ -152,8 +142,6 @@
     padding-left: 36px;
     padding-right: 36px;
     padding-bottom: 120px;
-
-    position: relative;
   }
 
   .reviewes-title {
@@ -165,8 +153,9 @@
 
   .reviewes-img {
     position: absolute;
-    top: -105px;
-    left: 0;
+    top: 145px;
+    left: -54px;
+    width: 118px;
   }
 
   .reviewes-slider-container {
@@ -180,7 +169,7 @@
     height: 251px;
   }
 
-  .reviewes-stars-list {    
+  .reviewes-stars-list {
     margin-bottom: 11px;
   }
 

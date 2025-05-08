@@ -1,42 +1,41 @@
 .main-characters-section {
-  padding-top: 0;
+  padding-top: 40px;
   padding-bottom: 0;
   position: relative;
 }
 
 //Flash mob
 .main-characters-section::before {
-  content: "";
+  content: '';
   position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: url('../img/main-characters/main-characters-flashlight-mob.png') ;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('../img/main-characters/main-characters-flashlight-mob.png');
   background-position: center top;
-  background-repeat: no-repeat;  
-  background-position: -60px -47px;
-   background-size: auto 250px;
-}
-
-@media only screen and (min-width: 655px) {
-  .main-characters-section::before {
-    content: none;
-  }
+  background-repeat: no-repeat;
+  background-position: -60px -7px;
+  background-size: auto 250px;
+  z-index: -1;
 }
 
 @media only screen and (min-width: 1200px) {
-
-//Flash desk
+  //Flash desk
   .main-characters-section::before {
-    content: "";
+    content: '';
     position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: url('../img/main-characters/main-characters-flashlight-desk.png') ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('../img/main-characters/main-characters-flashlight-desk.png');
     background-position: center top;
-    background-repeat: no-repeat; 
-    background-position: -113px 50px;
-     background-size: auto;
+    background-repeat: no-repeat;
+    background-position: -113px 90px;
+    background-size: auto;
   }
 }
-
 
 .main-characters-container {
   max-width: 320px;
@@ -44,7 +43,6 @@
   padding-left: 16px;
   padding-right: 16px;
   padding-bottom: 40px;
-  position: relative;
   padding-top: 65px;
 }
 
@@ -61,10 +59,9 @@
 
 .main-characters-img {
   position: absolute;
-  top: 32px;
+  top: 72px;
   right: 1px;
   width: 37px;
-  height: 40px;
 }
 
 .main-characters-slider-container {
@@ -153,7 +150,6 @@
     padding-left: 36px;
     padding-right: 36px;
     padding-bottom: 120px;
-    position: relative;
     padding-top: 202px;
   }
 
@@ -166,10 +162,9 @@
 
   .main-characters-img {
     position: absolute;
-    top: 90px;
+    top: 135px;
     right: 10px;
     width: 97px;
-    height: 105px;
   }
 
   .main-characters-slider-container {
