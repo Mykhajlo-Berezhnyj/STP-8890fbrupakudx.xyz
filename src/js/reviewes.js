@@ -1,7 +1,7 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 const data = [
   {
@@ -30,31 +30,9 @@ const data = [
   },
 ];
 
-//Swiper
-const swiper = new Swiper('.reviewes-slider', {
-  modules: [Pagination],  
-  pagination: {
-    el: '.reviewes-slider-pagination',
-    clickable: true,
-  },
-  // Cursor
-  grabCursor: true,
-  speed: 500,
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 16,
-  // Responsive breakpoints
-  breakpoints: {
-    320: {
-      slidesPerView: 1,
-      spaceBetween: 16,
-    },
-    1200: {
-      slidesPerView: 4,
-      spaceBetween: 24,
-    },
-  },
-});
+renderItems(data);
+
+
 
 // Render
 function renderItems(data) {
@@ -82,4 +60,33 @@ function renderItems(data) {
   slider.insertAdjacentHTML('beforeend', markup);
 }
 
-renderItems(data);
+//Swiper
+const swiper = new Swiper('.reviewes-slider', {
+  modules: [Autoplay, Pagination], 
+  
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 72,
+  slideToClickedSlide: true,
+  loop: true,
+  speed: 600,
+  grabCursor: true,
+  autoplay: {
+    delay: 1500,
+  },
+  pagination: {
+    el: '.reviewes-slider-pagination',
+    clickable: true,
+  }, 
+  // Responsive breakpoints
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 72,
+    },
+    1200: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+    },
+  },
+});
