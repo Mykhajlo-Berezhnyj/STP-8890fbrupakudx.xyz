@@ -1,26 +1,32 @@
 import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Pagination } from 'swiper/modules';
+import { Autoplay, Pagination } from 'swiper/modules';
 
 //Swiper
 const swiper = new Swiper('.main-characters-slider', {
-  modules: [Pagination],  
+  modules: [Autoplay, Pagination],
+  // Default parameters
+  slidesPerView: 1,
+  spaceBetween: 72,
+  slideToClickedSlide: true,
+  loop: true,
+  speed: 600,
+  grabCursor: true,
+  
+  autoplay: {
+    delay: 1500,
+  },
   pagination: {
     el: '.main-characters-slider-pagination',
     clickable: true,
   },
-  // Cursor
-  grabCursor: true,
-  speed: 500,
-  // Default parameters
-  slidesPerView: 1,
-  spaceBetween: 16,
+
   // Responsive breakpoints
   breakpoints: {
     320: {
       slidesPerView: 1,
-      spaceBetween: 16,
+      spaceBetween: 72,      
     },
     1200: {
       slidesPerView: 4,
@@ -28,4 +34,3 @@ const swiper = new Swiper('.main-characters-slider', {
     },
   },
 });
-
