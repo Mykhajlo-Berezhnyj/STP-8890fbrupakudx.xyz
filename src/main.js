@@ -6,3 +6,4 @@ import './js/main-characters';
 import './js/reviewes';
 import './js/main-cookies';
 import './js/hero';
+import './js/flashlight';

@@ -1,10 +1,6 @@
-
 #benefits {
   position: relative;
 }
-
-
-
 
 .benefits-title {
   display: block;
@@ -48,27 +44,27 @@
 //Flashlight desk
 @media only screen and (min-width: 1200px) {
   #benefits::before {
-// =======
-//   background: url('/img/reviewes/reviewes-flashlight-mob.png');
-//   background-position: center top;
-//   background-repeat: no-repeat;
-//   width: 100vw;
-//   background-position: calc(100% + 80px) -45px;
-//   background-size: auto 150px;
-//   transform: rotate(-5deg);
-// }
+    // =======
+    //   background: url('/img/reviewes/reviewes-flashlight-mob.png');
+    //   background-position: center top;
+    //   background-repeat: no-repeat;
+    //   width: 100vw;
+    //   background-position: calc(100% + 80px) -45px;
+    //   background-size: auto 150px;
+    //   transform: rotate(-5deg);
+    // }
 
-// // @media only screen and (min-width: 655px) {
-// //   r-section::before {
-// //     content: none;
-// //   }
-// // }
+    // // @media only screen and (min-width: 655px) {
+    // //   r-section::before {
+    // //     content: none;
+    // //   }
+    // // }
 
-// //Flash desk
+    // //Flash desk
 
-// @media only screen and (min-width: 1200px) {
-//   .container-rf::before {
-// >>>>>>> main
+    // @media only screen and (min-width: 1200px) {
+    //   .container-rf::before {
+    // >>>>>>> main
     content: '';
     position: absolute;
     top: 0;
@@ -82,18 +78,17 @@
     width: 100vw;
     background-position: calc(100% + 70px) 50px;
     background-size: auto;
-// =======
-//     background: url('/img/reviewes/reviewes-flashlight-desk.png');
-//     background-position: center top;
-//     background-repeat: no-repeat;
-//     width: 100%;
-//     background-position: calc(100%) -160px;
-//     background-size: auto;
-//     transform: rotate(-5deg);
-// >>>>>>> main
+    // =======
+    //     background: url('/img/reviewes/reviewes-flashlight-desk.png');
+    //     background-position: center top;
+    //     background-repeat: no-repeat;
+    //     width: 100%;
+    //     background-position: calc(100%) -160px;
+    //     background-size: auto;
+    //     transform: rotate(-5deg);
+    // >>>>>>> main
   }
 }
-
 
 // [data-benefits] {
 //   position: relative;

@@ -37,8 +37,6 @@
   }
 }
 
-
-
 .extrablocks-icon {
   width: 58.65px;
   height: 39.8px;
@@ -145,12 +143,15 @@
   font-size: 9.82px;
   line-height: 18.42px;
   text-align: center;
-  padding: 0 2px;
+  padding-left: 14.31px;
+  padding-right: 13.7px;
   transition: transform 0.3s ease, font-size 0.3s ease;
 
   @include media(desktop) {
     font-size: 16px;
     line-height: 30px;
+    padding-left: 25px;
+    padding-right: 24px;
   }
 }
 

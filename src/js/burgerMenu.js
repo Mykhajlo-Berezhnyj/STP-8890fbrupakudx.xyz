@@ -27,7 +27,7 @@ function toggleMenu() {
 
   setTimeout(() => {
     const iconId = newState === 'true' ? icons.open : icons.closed;
-    burgerIconUse.setAttribute('href', `/img/sprite.svg#${iconId}`);
+    burgerIconUse.setAttribute('href', `./img/sprite.svg#${iconId}`);
 
     // burgerIconUse.setAttribute('xlink:href', `/img/sprite.svg#${iconId}`);
     burgerBtn.classList.remove('rotate');

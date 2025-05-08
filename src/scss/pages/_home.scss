@@ -1,0 +1,41 @@
+.flashlight-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  opacity: 0;
+  pointer-events: none;
+  transition: background 0.2s;
+  z-index: 9999;
+}
+
+.flashlight-overlay.full-dark {
+  background: rgba(0, 0, 0, 1);
+}
+
+.flashlight-overlay.light-active {
+  background: rgba(0, 0, 0, 0.329);
+}
+
+.flashlight-overlay.flicker {
+  animation: flickerAnimation 0.1s infinite;
+}
+
+@keyframes flickerAnimation {
+  0% {
+    background: rgba(0, 0, 0, 0.911);
+  }
+  50% {
+    background: rgba(255, 255, 255, 1);
+  }
+  100% {
+    background: rgba(0, 0, 0, 0.856);
+  }
+}
+
+.flashlight-overlay.flashlight-active {
+  background: radial-gradient(
+    circle at var(--x, 50%) var(--y, 50%),
+    transparent 550px,
+    rgba(0, 0, 0, 0.842) 30px
+  );
+}
