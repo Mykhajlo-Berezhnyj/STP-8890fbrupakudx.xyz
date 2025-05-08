@@ -16,7 +16,7 @@ window.addEventListener('load', () => {
     setTimeout(() => {
       modal.hidden = true;
       modal.classList.remove(directionClass);
-    }, 600);
+    }, 400);
   };
 
   btnAccept.addEventListener('click', () => {
