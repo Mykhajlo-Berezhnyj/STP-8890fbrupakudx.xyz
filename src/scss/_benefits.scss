@@ -14,7 +14,7 @@
   line-height: 22px;
   text-align: left;
   color: #000000;
-  -webkit-text-stroke: 1px #ffffff;
+  // -webkit-text-stroke: 1px #ffffff;
 
   @include media(desktop) {
     font-size: 50px;
@@ -24,6 +24,9 @@
 }
 
 //Flashlight mob
+.benefits-container{
+  padding-top: 35px;
+}
 #benefits::before {
   content: '';
   position: absolute;
@@ -43,6 +46,10 @@
 
 //Flashlight desk
 @media only screen and (min-width: 1200px) {
+
+  .benefits-container{
+    padding-top: 100px;
+  }
   #benefits::before {
     // =======
     //   background: url('/img/reviewes/reviewes-flashlight-mob.png');
@@ -109,12 +116,14 @@
   height: 49.18px;
   position: absolute;
   left: -17.57px;
-  top: 0.13px;
-  transform: rotate(14.03deg);
+  top: 20px;
+  // transform: rotate(14.03deg);
 
   @include media(desktop) {
     width: 75.76px;
     height: 89.09px;
+    left: -17.57px;
+    top: 120px;
   }
 }
 
