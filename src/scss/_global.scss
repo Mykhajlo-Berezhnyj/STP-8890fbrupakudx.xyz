@@ -98,17 +98,17 @@ section {
   // overflow: visible;
   background: url('../img/key-features/key-features-flashlight-desk.png');
   // background-position: right top;
-  background-position: calc(50% - 50px) 0px, calc(50% + 153px);
+  background-position: calc(50% - 80px) -10px, calc(50% + 153px);
   background-repeat: no-repeat;
-  background-size: 500px auto;
+  background-size: 600px auto;
 }
 
 .section-left {
   background: url('../img/main-characters/main-characters-flashlight-desk.png');
   // background-position: left top;
-  background-position: calc(50% + 50px) 8px, calc(50% + 153px);
+  background-position: calc(50% + 80px) 0px, calc(50% + 153px);
   background-repeat: no-repeat;
-  background-size: 500px auto;
+  background-size: 600px auto;
 }
 
 @media only screen and (min-width: 1200px) {
