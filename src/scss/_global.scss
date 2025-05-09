@@ -94,19 +94,21 @@ section {
 }
 
 .section-right {
-  position: relative;
-  overflow: visible;
+  // position: relative;
+  // overflow: visible;
   background: url('../img/key-features/key-features-flashlight-desk.png');
-  background-position: right top;
+  // background-position: right top;
+  background-position: calc(50% - 50px) 0px, calc(50% + 153px);
   background-repeat: no-repeat;
   background-size: 1500px auto;
 }
 
 .section-left {
-  background-position: left top;
+  
   background: url('../img/main-characters/main-characters-flashlight-desk.png');
-  background-repeat: no-repeat;
-  background-repeat: no-repeat;
+  // background-position: left top;
+  background-position: calc(50% + 50px) 0px, calc(50% + 153px);
+  background-repeat: no-repeat;  
   background-size: 1500px auto;
 }
 
