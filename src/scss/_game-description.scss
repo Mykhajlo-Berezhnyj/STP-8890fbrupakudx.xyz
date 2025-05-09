@@ -2,9 +2,8 @@
   position: relative;
 }
 
-
 //Flash mob
-.game-description-container{
+.game-description-container {
   padding-top: 60px;
 }
 #game-description::before {
@@ -24,7 +23,7 @@
 
 @media only screen and (min-width: 1200px) {
   //Flash desk
-  .game-description-container{
+  .game-description-container {
     padding-top: 120px;
   }
   #game-description::before {
@@ -42,7 +41,6 @@
   }
 }
 
-
 .flashlight-container {
   background-image: url('/img/flashlight.webp');
   background-repeat: no-repeat;
@@ -53,16 +51,16 @@
   opacity: 0.8;
   transform: rotate(173.99deg) translate(10px, -130px);
   margin-left: calc(-1 * ((100vw - 100%) / 2));
-
+  margin: 0, auto;
   @include media(desktop) {
     background-size: 1%;
   }
 }
 
-.flashlight-container:hover {
-  transform-origin: left right;
-  transform: rotate(-140deg) translate(-90px, -210px);
-}
+// .flashlight-container:hover {
+//   transform-origin: left right;
+//   transform: rotate(-140deg) translate(-90px, -210px);
+// }
 
 .flashlight-img {
   display: block;
@@ -84,25 +82,24 @@
 
 .description-icon {
   position: absolute;
-  width: 58.65px;
-  height: 39.8px;
+  width: 45.98px;
+  height: 35.5px;
   top: 50px;
-  right: 0px;
-  // transform: rotate(23.13deg) translate(-38px, 20px);
+  right: -18px;
+  transform: rotate(19.63deg) translate(-38px, 20px);
 
   @include media(desktop) {
-    width: 94px;
-    height: 63.79px;
-    top: 170px;
-    right: 0px;
-    // transform: rotate(23.13deg) translate(-38px, 20px);
+    width: 98.98px;
+    height: 76.42px;
+    top: 190px;
+    right: -52px;
+    transform: rotate(19.63deg);
   }
 }
 
-
-
 .container {
-  padding-left: 14.68px;
+  // padding-left: 14.68px;
+  margin-right: -1.32;
 }
 
 .game-title {

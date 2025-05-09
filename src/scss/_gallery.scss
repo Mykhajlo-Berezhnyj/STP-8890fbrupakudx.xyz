@@ -1,8 +1,6 @@
-
 #gallery {
   position: relative;
 
-  
   // background-image: url('/img/flashlight-mob.png');
   // background-position: calc((100% + 320px) / 2 - 30px) -20px;
   // background-repeat: no-repeat;
@@ -16,7 +14,6 @@
   // }
 }
 
-
 //Flash mob
 .gallery-container {
   padding-top: 60px;
@@ -28,7 +25,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: url('../img/main-characters/main-characters-flashlight-mob.png');  
+  background: url('../img/main-characters/main-characters-flashlight-mob.png');
   background-repeat: no-repeat;
   background-position: -60px -17px;
   background-size: auto 250px;
@@ -44,13 +41,12 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('../img/main-characters/main-characters-flashlight-desk.png');    
+    background: url('../img/main-characters/main-characters-flashlight-desk.png');
     background-repeat: no-repeat;
     background-position: -113px 25px;
     background-size: auto;
   }
 }
-
 
 .title-wrapper {
   position: relative;
@@ -68,7 +64,7 @@
   height: 37.53px;
   //   left: calc(100% + 19px);
   //   top: -14.17px;
-  // transform: translate(17.68px, 14.17px) rotate(0.81deg);
+  transform: translate(17.68px, 14.17px) rotate(0.81deg);
 
   @include media(desktop) {
     top: 100px;
@@ -77,12 +73,9 @@
   }
 }
 
-
 // top: 55px;
 // left: -30px;
 // width: 54px;
-
-
 
 // .container0 {
 //   max-width: 100%;
@@ -125,13 +118,13 @@
 //   }
 // }
 .img-gallery {
-  width: 188px;
-  height: 420px;
+  width: 323px;
+  height: 431px;
   border: 1.47px solid #000000;
   border-radius: 7px;
   @include media(desktop) {
-    width: 257px;
-    height: 574px;
+    width: 423px;
+    height: 564px;
     border: 2px solid #000000;
     border-radius: 10px;
   }
