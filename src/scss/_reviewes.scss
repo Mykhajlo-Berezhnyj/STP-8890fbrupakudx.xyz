@@ -144,6 +144,10 @@
     padding-bottom: 120px;
   }
 
+  .reviewes-container:hover {
+    transform: scale(1.1);
+  }
+
   .reviewes-title {
     margin-bottom: 280px;
     font-weight: 400;
@@ -169,6 +173,10 @@
     height: 251px;
   }
 
+  // .reviewes-slider-item:hover {
+  //   transform: scale(1.1);
+  // }
+
   .reviewes-stars-list {
     margin-bottom: 11px;
   }
@@ -185,4 +193,8 @@
     font-size: 18px;
     line-height: 1.67;
   }
+}
+
+.reviewes-slider-item-info:hover {
+  font-weight: bold;
 }
