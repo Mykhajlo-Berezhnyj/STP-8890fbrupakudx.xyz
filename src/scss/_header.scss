@@ -156,3 +156,9 @@ header {
   transform: translateX(0);
   pointer-events: auto;
 }
+
+svg path {
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+}

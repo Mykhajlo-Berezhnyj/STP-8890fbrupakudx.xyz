@@ -153,11 +153,19 @@
     padding-top: 202px;
   }
 
+  .main-characters-container:hover {
+    transform: scale(1.1);
+  }
+
   .main-characters-title {
     margin-bottom: 191px;
     font-weight: 400;
     font-size: 50px;
     line-height: 0.44;
+  }
+
+  .swiper main-characters-slider:hover img {
+    transform: rotate(360);
   }
 
   .main-characters-img {
@@ -167,7 +175,7 @@
     width: 97px;
   }
 
-  img:hover {
+  .main-characters-img:hover {
     transform: rotate(360deg);
   }
 
