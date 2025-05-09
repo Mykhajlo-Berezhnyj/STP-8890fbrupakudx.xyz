@@ -1,39 +1,29 @@
 const flashlight = document.querySelector('.flashlight-overlay');
 let flashlightActive = false;
-let beamRadius = 50;
-let targetBeamRadius = 450;
+let beamRadius = 60;
+let targetBeamRadius = 400;
 let clickCount = 0;
 let clickTimer = null;
+let timer = null;
 
-const timer = setTimeout(() => {
-  flashlight.style.opacity = 1;
-  flashlight.classList.add('light-active');
-  activateFlashlight();
-}, 5000);
+if (window.innerWidth >= 768) {
+  timer = setTimeout(() => {
+    flashlight.style.opacity = 1;
+    flashlight.classList.add('light-active');
+    activateFlashlight();
+  }, 5000);
 
-window.addEventListener('mousemove', e => {
-  if (!flashlightActive) return;
-  flashlight.style.background = `
-    radial-gradient(
-      circle ${beamRadius}px at ${e.clientX}px ${e.clientY}px,
-      rgba(255, 255, 255, 0.29) 0%,
-      rgba(0, 0, 0, 0.6) 100%
-    )
-  `;
-});
-
-function updateBeamRadius() {
-  if (window.innerWidth < 768) {
-    beamRadius = 60;
-    targetBeamRadius = 120;
-  } else {
-    beamRadius = 80;
-    targetBeamRadius = 400;
-  }
+  window.addEventListener('mousemove', e => {
+    if (!flashlightActive) return;
+    flashlight.style.background = `
+      radial-gradient(
+        circle ${beamRadius}px at ${e.clientX}px ${e.clientY}px,
+        rgba(255, 255, 255, 0.29) 0%,
+        rgba(0, 0, 0, 0.6) 100%
+      )
+    `;
+  });
 }
-
-updateBeamRadius();
-window.addEventListener('resize', updateBeamRadius);
 
 function activateFlashlight() {
   flashlightActive = true;
