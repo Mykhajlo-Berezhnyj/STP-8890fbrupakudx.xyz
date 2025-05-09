@@ -3,6 +3,27 @@
   position: relative;
 }
 
+//Flashlight and monstr
+.reviewes-section.section-right {  
+  background: url('../img/reviewes/reviewes-monstr.png'),
+  url('../img/key-features/key-features-flashlight-desk.png')
+  ;
+  
+  background-position: calc(50% - 157px) 37px, calc(50% - 210px) -10px;
+  background-repeat: no-repeat;
+  background-size: 63px auto,
+  900px auto
+  ;
+}
+@media only screen and (min-width: 1200px) {
+  .reviewes-section.section-right {
+    background-position:  calc(50% - 595px) 10px, calc(50% - 50px) -21px;
+    background-size: 118px auto, 1500px auto;
+  }
+
+}
+//-------
+
 //Flash mob
 
 // .reviewes-section::before {
