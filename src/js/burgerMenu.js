@@ -29,7 +29,7 @@ function toggleMenu() {
     const iconId = newState === 'true' ? icons.open : icons.closed;
     burgerIconUse.setAttribute('href', `#${iconId}`);
 
-    burgerIconUse.setAttribute('xlink:href', `/img/sprite.svg#${iconId}`);
+    burgerIconUse.setAttribute('xlink:href', `#${iconId}`);
     burgerBtn.classList.remove('rotate');
   }, 300);
 }
