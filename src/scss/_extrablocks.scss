@@ -46,15 +46,15 @@
   position: absolute;
   width: 58.65px;
   height: 39.8px;
-  top: 50px;
-  left: -10px;
+  top: 40px;
+  left: -25px;
   // transform: rotate(23.13deg) translate(-38px, 20px);
 
   @include media(desktop) {
     width: 94px;
     height: 63.79px;
     top: 100px;
-    left: 200px;
+    left: -35px;
     // transform: rotate(23.13deg) translate(-38px, 20px);
   }
 }

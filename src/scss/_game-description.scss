@@ -84,16 +84,16 @@
   position: absolute;
   width: 45.98px;
   height: 35.5px;
-  top: 50px;
+  top: 73px;
   right: -18px;
-  transform: rotate(19.63deg) translate(-38px, 20px);
+  // transform: rotate(19.63deg) translate(-38px, 20px);
 
   @include media(desktop) {
     width: 98.98px;
     height: 76.42px;
-    top: 190px;
-    right: -52px;
-    transform: rotate(19.63deg);
+    top: 150px;
+    right: -40px;
+    // transform: rotate(19.63deg);
   }
 }
 
