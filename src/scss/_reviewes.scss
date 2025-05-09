@@ -1,5 +1,5 @@
 .reviewes-section {
-  padding-top: 67px;
+  // padding-top: 67px;
   position: relative;
 }
 
@@ -134,15 +134,14 @@
 
 @media only screen and (min-width: 1200px) {
   .reviewes-section {
-    padding-top: 235px;
+    // padding-top: 235px;
   }
 
   .reviewes-container {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 36px;
-    padding-right: 36px;
-    padding-bottom: 30px;
+    padding-right: 36px;    
   }
 
   .reviewes-container:hover {
