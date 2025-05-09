@@ -43,12 +43,11 @@
 }
 
 .extrablocks-icon {
-  position: absolute;
   width: 58.65px;
   height: 39.8px;
-  top: 50px;
-  left: -10px;
-  // transform: rotate(23.13deg) translate(-38px, 20px);
+  // top: 50px;
+  // left: -10px;
+  transform: rotate(23.13deg) translate(-38px, 20px);
 
   @include media(desktop) {
     width: 94px;

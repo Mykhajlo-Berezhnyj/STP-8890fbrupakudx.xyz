@@ -6,56 +6,57 @@
 .game-description-container {
   padding-top: 60px;
 }
-#game-description::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('../img/main-characters/main-characters-flashlight-mob.png');
-  background-position: center top;
-  background-repeat: no-repeat;
-  background-position: -60px -7px;
-  background-size: auto 250px;
-  z-index: -1;
-}
+// #game-description::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: url('../img/main-characters/main-characters-flashlight-mob.png');
+//   background-position: center top;
+//   background-repeat: no-repeat;
+//   background-position: -60px -7px;
+//   background-size: auto 250px;
+//   z-index: -1;
+// }
 
 @media only screen and (min-width: 1200px) {
   //Flash desk
   .game-description-container {
     padding-top: 120px;
   }
-  #game-description::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('../img/main-characters/main-characters-flashlight-desk.png');
-    background-position: center top;
-    background-repeat: no-repeat;
-    background-position: -113px 90px;
-    background-size: auto;
-  }
 }
+//   #game-description::before {
+//     content: '';
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     right: 0;
+//     bottom: 0;
+//     background: url('../img/main-characters/main-characters-flashlight-desk.png');
+//     background-position: center top;
+//     background-repeat: no-repeat;
+//     background-position: -113px 90px;
+//     background-size: auto;
+//   }
+// }
 
-.flashlight-container {
-  background-image: url('/img/flashlight.webp');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 150px;
-  width: 100vw;
-  opacity: 0.8;
-  transform: rotate(173.99deg) translate(10px, -130px);
-  margin-left: calc(-1 * ((100vw - 100%) / 2));
-  margin: 0, auto;
-  @include media(desktop) {
-    background-size: 1%;
-  }
-}
+// .flashlight-container {
+//   background-image: url('/img/flashlight.webp');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   background-position: center;
+//   height: 150px;
+//   width: 100vw;
+//   opacity: 0.8;
+//   transform: rotate(173.99deg) translate(10px, -130px);
+//   margin-left: calc(-1 * ((100vw - 100%) / 2));
+//   margin: 0, auto;
+//   @include media(desktop) {
+//     background-size: 1%;
+//   }
+// }
 
 // .flashlight-container:hover {
 //   transform-origin: left right;
@@ -81,11 +82,6 @@
 // }
 
 .description-icon {
-  position: absolute;
-  width: 45.98px;
-  height: 35.5px;
-  top: 50px;
-  right: -18px;
   transform: rotate(19.63deg) translate(-38px, 20px);
 
   @include media(desktop) {
