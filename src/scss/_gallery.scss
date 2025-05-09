@@ -16,7 +16,7 @@
 
 //Flash mob
 .gallery-container {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 #gallery::before {
   content: '';
@@ -49,12 +49,19 @@
 }
 
 .gallery-icon {
+
+
+  width: 44.71px;
+  height: 37.53px;
   //   left: calc(100% + 19px);
   //   top: -14.17px;
   transform: translate(17.68px, 14.17px) rotate(0.81deg);
 
   @include media(desktop) {
+
     transform: translate(17.68px, 14.17px) rotate(0.81deg);
+
+
   }
 }
 
@@ -80,7 +87,7 @@
 
 .gallery-title {
   text-align: right;
-  margin-bottom: 46.11px;
+  margin-bottom: 80px;
   @include media(desktop) {
     margin-right: 35px;
     padding-right: 20px;

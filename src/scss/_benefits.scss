@@ -76,10 +76,12 @@
 .benefits-icon {
   width: 41.82px;
   height: 49.18px;
+
   //   position: absolute;
   //   left: -17.57px;
   //   top: 20px;
   transform: translate(-32.57px, -60px) rotate(14.03deg);
+
 
   @include media(desktop) {
     width: 75.76px;
