@@ -54,7 +54,7 @@ screen types:
 }
 
 @mixin section {
-  padding-top: 40px;
+  padding-top: 80px;
   padding-bottom: 40px;
 
   @include media(desktop) {
