@@ -167,6 +167,10 @@
     width: 97px;
   }
 
+  img:hover {
+    transform: rotate(360deg);
+  }
+
   .main-characters-slider-container {
     padding-left: 0;
     padding-right: 0;
