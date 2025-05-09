@@ -4,6 +4,26 @@
   position: relative;
 }
 
+//Flashlight and monstr
+.main-characters-section.section-left {
+  background: url('../img/main-characters/main-characters-monstr.png'),
+    url('../img/main-characters/main-characters-flashlight-desk.png');
+
+  background-position: calc(50% + 140px) 47px, calc(50% + 210px) 15px;
+  background-repeat: no-repeat;
+  background-size: 37px auto, 900px auto;
+}
+@media only screen and (min-width: 1200px) {
+  .main-characters-section.section-left {
+    background-position: calc(50% + 535px) -5px, calc(50% + 50px) -15px;
+    background-size: 97px auto, 1500px auto;
+  }
+}
+
+
+
+
+//-------
 //Flash mob
 // .main-characters-section::before {
 //   content: '';
@@ -20,9 +40,9 @@
 //   z-index: -1;
 // }
 
- //Flash desk
+//Flash desk
 // @media only screen and (min-width: 1200px) {
- 
+
 //   .main-characters-section::before {
 //     content: '';
 //     position: absolute;
