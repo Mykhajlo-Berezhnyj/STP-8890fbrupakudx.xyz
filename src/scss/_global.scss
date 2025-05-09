@@ -90,7 +90,7 @@ section {
 .title-wrapper {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
 }
 
 .section-right {
@@ -100,18 +100,31 @@ section {
   // background-position: right top;
   background-position: calc(50% - 50px) 0px, calc(50% + 153px);
   background-repeat: no-repeat;
-  background-size: 1500px auto;
+  background-size: 480px auto;
 }
 
 .section-left {
-  
   background: url('../img/main-characters/main-characters-flashlight-desk.png');
   // background-position: left top;
   background-position: calc(50% + 50px) 0px, calc(50% + 153px);
-  background-repeat: no-repeat;  
-  background-size: 1500px auto;
+  background-repeat: no-repeat;
+  background-size: 480px auto;
+}
+
+@media only screen and (min-width: 1200px) {
+  .section-right {
+    background-size: 1500px auto;
+  }
+
+  .section-left {
+    background-size: 1500px auto;
+  }
+}
+
+.section-right .title-wrapper {
+  justify-content: flex-start;
 }
 
 .section-left .title-wrapper {
-  justify-content: flex-start;
+  justify-content: flex-end;
 }
