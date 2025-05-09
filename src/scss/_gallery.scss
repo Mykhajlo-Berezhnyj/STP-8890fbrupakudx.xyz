@@ -48,18 +48,9 @@
   }
 }
 
-.title-wrapper {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  margin-right: -14.17px;
-  justify-content: right;
-}
-
 .gallery-icon {
-  position: absolute;
-  top: 50px;
-  right: 0;
+
+
   width: 44.71px;
   height: 37.53px;
   //   left: calc(100% + 19px);
@@ -67,10 +58,10 @@
   transform: translate(17.68px, 14.17px) rotate(0.81deg);
 
   @include media(desktop) {
-    top: 100px;
-    width: 97px;
-    height: 81px;
-    right: -15px;
+
+    transform: translate(17.68px, 14.17px) rotate(0.81deg);
+
+
   }
 }
 

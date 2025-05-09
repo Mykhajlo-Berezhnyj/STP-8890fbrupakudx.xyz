@@ -86,3 +86,30 @@ section {
 .container {
   @include container;
 }
+
+.title-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.section-right {
+  position: relative;
+  overflow: visible;
+  background: url('../img/key-features/key-features-flashlight-desk.png');
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: 1500px auto;
+}
+
+.section-left {
+  background-position: left top;
+  background: url('../img/main-characters/main-characters-flashlight-desk.png');
+  background-repeat: no-repeat;
+  background-repeat: no-repeat;
+  background-size: 1500px auto;
+}
+
+.section-left .title-wrapper {
+  justify-content: flex-start;
+}
