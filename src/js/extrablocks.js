@@ -14,7 +14,7 @@ const swiper = new Swiper('#extrablocks-swiper', {
   speed: 600,
   grabCursor: true,
   autoplay: {
-    delay: 1500,
+    delay: 2500,
   },
   keyboard: {
     enabled: true,
