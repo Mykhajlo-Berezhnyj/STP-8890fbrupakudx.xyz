@@ -30,6 +30,10 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: $_main_bg_color;
   color: $_main_color;
@@ -101,8 +105,6 @@ section {
   justify-content: flex-end;
 }
 
-
-
 .section-right {
   // position: relative;
   // overflow: visible;
@@ -132,5 +134,3 @@ section {
     background-size: 1500px auto;
   }
 }
-
-
