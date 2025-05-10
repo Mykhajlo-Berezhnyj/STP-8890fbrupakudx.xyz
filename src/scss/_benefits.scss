@@ -30,6 +30,25 @@
   }
 }
 
+
+
+//Flashlight and monstr
+#benefits.section-right {
+  background: url('../img/monstr1.png'),
+    url('../img/key-features/key-features-flashlight-desk.png');
+
+  background-position: calc(50% - 160px) 26px, calc(50% - 225px) -10px;
+  background-repeat: no-repeat;
+  background-size: 58px auto, 900px auto;
+}
+@media only screen and (min-width: 1200px) {
+  #benefits.section-right {
+    background-position: calc(50% - 590px) 14px, calc(50% - 50px) -21px;
+    background-size: 94px auto, 1500px auto;
+  }
+}
+//-------
+
 // //Flashlight mob
 // .benefits-container {
 //   padding-top: 35px;
