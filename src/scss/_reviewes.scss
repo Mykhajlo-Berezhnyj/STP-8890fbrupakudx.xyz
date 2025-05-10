@@ -84,7 +84,7 @@
   // top: 30px;
   // left: -30px;
   // width: 62px;
-  transform: translate(17.68px, 14.17px) rotate(0.81deg);
+  // transform: translate(17.68px, 14.17px) rotate(0.81deg);
 }
 
 .reviewes-slider-container {
@@ -165,9 +165,9 @@
     padding-right: 36px;    
   }
 
-  .reviewes-container:hover {
-    transform: scale(1.1);
-  }
+  // .reviewes-container:hover {
+  //   transform: scale(1.1);
+  // }
 
   .reviewes-title {
     margin-bottom: 280px;
@@ -216,6 +216,6 @@
   }
 }
 
-.reviewes-slider-item-info:hover {
-  font-weight: bold;
-}
+// .reviewes-slider-item-info:hover {
+//   font-weight: bold;
+// }
