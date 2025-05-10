@@ -1,17 +1,33 @@
 #benefits {
-  position: relative;
+}
+
+//Flashlight and monstr
+#benefits {
+  background: url('../img/monstr1.webp'),
+    url('../img/key-features/key-features-flashlight-desk.png');
+
+  background-position: calc(50% - 155px) 37px, calc(50% - 225px) -20px;
+  background-repeat: no-repeat;
+  background-size: 49px auto, 900px auto;
+
+  @include media(desktop) {
+    background-position: calc(50% - 590px) 14px, calc(50% - 50px) -21px;
+    background-size: 94px auto, 1500px auto;
+  }
 }
 
 .title-wrapper {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  //   margin-bottom: 81.02px;
+  margin-bottom: 41.02px;
 }
 
 .benefits-title {
   display: block;
-  margin-bottom: 80px;
+
+  margin-bottom: 41.02px;
+
   width: 115px;
   height: 20px;
   padding-right: 4px;
@@ -21,7 +37,8 @@
   line-height: 22px;
   text-align: left;
   color: #000000;
-  // -webkit-text-stroke: 1px #ffffff;
+  //-webkit-text-stroke: 3px #ffffff;
+  margin-bottom: 41.02px;
 
   @include media(desktop) {
     font-size: 50px;
@@ -32,65 +49,6 @@
 
 
 
-//Flashlight and monstr
-#benefits.section-right {
-  background: url('../img/monstr1.png'),
-    url('../img/key-features/key-features-flashlight-desk.png');
-
-  background-position: calc(50% - 160px) 26px, calc(50% - 225px) -10px;
-  background-repeat: no-repeat;
-  background-size: 58px auto, 900px auto;
-}
-@media only screen and (min-width: 1200px) {
-  #benefits.section-right {
-    background-position: calc(50% - 590px) 14px, calc(50% - 50px) -21px;
-    background-size: 94px auto, 1500px auto;
-  }
-}
-//-------
-
-// //Flashlight mob
-// .benefits-container {
-//   padding-top: 35px;
-// }
-// #benefits::before {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-
-//   background: url('../img/key-features/key-features-flashlight-mob.png');
-//   background-position: center top;
-//   background-repeat: no-repeat;
-//   width: 100vw;
-//   background-position: calc(100% + 70px) -15px;
-//   background-size: auto 150px;
-//   z-index: -1;
-// }
-
-// //Flashlight desk
-// @media only screen and (min-width: 1200px) {
-//   .benefits-container {
-//     padding-top: 100px;
-//   }
-//   #benefits::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-
-//     background: url('../img/key-features/key-features-flashlight-desk.png');
-//     background-position: center top;
-//     background-repeat: no-repeat;
-//     width: 100vw;
-//     background-position: calc(100% + 70px) 50px;
-//     background-size: auto;
-//   }
-// }
 
 .benefits-icon {
   width: 41.82px;

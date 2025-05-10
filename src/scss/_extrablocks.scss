@@ -1,22 +1,42 @@
-#extrablocks {
-  position: relative;
-}
-
 //Flashlight and monstr
-#extrablocks.section-right {
-  background: url('../img/monstr3.png'),
+#extrablocks {
+  background: url('../img/monstr3.webp'),
     url('../img/key-features/key-features-flashlight-desk.png');
 
-  background-position: calc(50% - 160px) 43px, calc(50% - 225px) -10px;
+  background-position: calc(50% - 155px) 37px, calc(50% - 225px) -20px;
   background-repeat: no-repeat;
-  background-size: 59px auto, 900px auto;
-}
-@media only screen and (min-width: 1200px) {
-  #extrablocks.section-right {
-    background-position: calc(50% - 600px) 34px, calc(50% - 50px) -21px;
+  background-size: 49px auto, 900px auto;
+
+  @include media(desktop) {
+    background-position: calc(50% - 590px) 14px, calc(50% - 50px) -21px;
     background-size: 94px auto, 1500px auto;
   }
 }
+
+.h2-extrablock {
+  margin-bottom: 78px;
+  align-items: start;
+  text-align: left;
+  @include media(desktop) {
+    margin-bottom: 162.45px;
+  }
+}
+
+// //Flashlight and monstr
+// #extrablocks.section-right {
+//   background: url('../img/monstr3.png'),
+//     url('../img/key-features/key-features-flashlight-desk.png');
+
+//   background-position: calc(50% - 160px) 43px, calc(50% - 225px) -10px;
+//   background-repeat: no-repeat;
+//   background-size: 59px auto, 900px auto;
+// }
+// @media only screen and (min-width: 1200px) {
+//   #extrablocks.section-right {
+//     background-position: calc(50% - 600px) 34px, calc(50% - 50px) -21px;
+//     background-size: 94px auto, 1500px auto;
+//   }
+// }
 //-------
 
 //Flashlight mob
@@ -59,22 +79,18 @@
 //   }
 // }
 
-.extrablocks-icon {
-  width: 58.65px;
-  height: 39.8px;
+// .extrablocks-icon {
+//   width: 58.65px;
+//   height: 39.8px;
 
-  // top: 50px;
-  // left: -10px;
-  transform: rotate(23.13deg) translate(-38px, 20px);
-
-  @include media(desktop) {
-    width: 94px;
-    height: 63.79px;
-    top: 100px;
-    left: -35px;
-    // transform: rotate(23.13deg) translate(-38px, 20px);
-  }
-}
+//   // top: 50px;
+//   // left: -10px;
+//   transform: rotate(23.13deg) translate(-38px, 20px
+//   @include media(desktop) {
+//     background-position: calc(50% - 590px) 14px, calc(50% - 50px) -21px;
+//     background-size: 94px auto, 1500px auto;
+//   }
+// }
 
 .h2-extrablock {
   margin-bottom: 78px;
