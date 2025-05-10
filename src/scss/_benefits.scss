@@ -6,12 +6,12 @@
   background: url('../img/monstr1.webp'),
     url('../img/key-features/key-features-flashlight-desk.png');
 
-  background-position: calc(50% - 155px) 37px, calc(50% - 225px) -20px;
+  background-position: calc(50% - 160px) 37px, calc(50% - 225px) -20px;
   background-repeat: no-repeat;
   background-size: 49px auto, 900px auto;
 
   @include media(desktop) {
-    background-position: calc(50% - 590px) 14px, calc(50% - 50px) -21px;
+    background-position: calc(50% - 608px) 14px, calc(50% - 50px) -21px;
     background-size: 94px auto, 1500px auto;
   }
 }
@@ -47,9 +47,6 @@
   }
 }
 
-
-
-
 .benefits-icon {
   width: 41.82px;
   height: 49.18px;
@@ -58,7 +55,6 @@
   //   left: -17.57px;
   //   top: 20px;
   transform: translate(-32.57px, -60px) rotate(14.03deg);
-
 
   @include media(desktop) {
     width: 75.76px;
