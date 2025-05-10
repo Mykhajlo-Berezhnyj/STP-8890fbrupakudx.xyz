@@ -14,6 +14,30 @@
   // }
 }
 
+
+
+//Flashlight and monstr
+#gallery.section-left {
+  background: url('../img/monstr4.png'),
+    url('../img/main-characters/main-characters-flashlight-desk.png');
+
+  background-position: calc(50% + 160px) 47px, calc(50% + 210px) 15px;
+  background-repeat: no-repeat;
+  background-size: 45px auto, 900px auto;
+}
+@media only screen and (min-width: 1200px) {
+  #gallery.section-left {
+    background-position: calc(50% + 585px) 40px, calc(50% + 50px) -15px;
+    background-size: 97px auto, 1500px auto;
+  }
+}
+//-------
+
+
+
+
+
+
 //Flash mob
 // .gallery-container {
 //   padding-top: 50px;
