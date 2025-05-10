@@ -35,7 +35,7 @@
     <script type="module" crossorigin src="/STP-8890fbrupakudx.xyz/commonHelpers2.js"></script>
     <link rel="modulepreload" crossorigin href="/STP-8890fbrupakudx.xyz/assets/vendor-7e7cc059.js">
     <link rel="stylesheet" href="/STP-8890fbrupakudx.xyz/assets/vendor-463cc383.css">
-    <link rel="stylesheet" href="/STP-8890fbrupakudx.xyz/assets/styles-453b9290.css">
+    <link rel="stylesheet" href="/STP-8890fbrupakudx.xyz/assets/styles-41b4111c.css">
   </head>
 
   <body>
@@ -47,6 +47,30 @@
     <path d="M6 6l12 12M6 18L18 6" />
   </symbol>
 </svg>
+
+<button
+  id="scrollToTop"
+  class="scroll-to-top"
+  title="Scroll to top"
+  aria-label="Scroll to top"
+>
+  <svg
+    width="32"
+    height="32"
+    viewBox="0 0 32 32"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      fill="none"
+      stroke="#fafafa"
+      stroke-linejoin="miter"
+      stroke-linecap="butt"
+      stroke-miterlimit="4"
+      stroke-width="3.2"
+      d="M24 20l-8-8-8 8"
+    />
+  </svg>
+</button>
 
 <!-- <svg class="icon-scroll-to-up" width="18" height="18">
   <use xlink:href="../img/sprite.svg#icon-arrow-up"></use>
@@ -333,10 +357,18 @@
 </section>
 
     <section id="extrablocks" class="section-right">
-  
+  <div class="flashlight-container3"></div>
   <div class="container container-extrablocks">
-
-    <h2 class="h2-extrablock">Extra Blocks</h2>
+    <div class="title-wrapper">
+      <h2 class="h2-extrablock">Extra Blocks</h2>
+      <img
+        class="extrablocks-icon"
+        src="data:image/webp;base64,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"
+        alt="monstr3"
+        width="20"
+        height="20"
+      />
+    </div>
 
     <!-- Slider main container -->
     <div class="container-swiper">
@@ -501,8 +533,7 @@
 
     <section id="gallery" class="section-left">
   <div class="container gallery-container">
-
-      <h2 class="gallery-title">Gallery</h2>
+    <h2 class="gallery-title">Gallery</h2>
 
     <div class="container-gallery">
       <div id="gallery-swiper" class="swiper">
