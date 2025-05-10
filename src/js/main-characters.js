@@ -34,3 +34,6 @@ const swiper = new Swiper('.main-characters-slider', {
     },
   },
 });
+
+
+  
