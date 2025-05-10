@@ -147,10 +147,11 @@
   font-size: 12px;
   line-height: 1.83;
   color: #000;
+  transition: transform 0.3s ease, font-size 0.3s ease;
 }
 
 .main-characters-slider-item-info:hover {
-    transform: scale(1.07) translateY(-4px);
+    transform: scale(1.07);
   }
 
 .main-characters-slider .main-characters-slider-pagination {
