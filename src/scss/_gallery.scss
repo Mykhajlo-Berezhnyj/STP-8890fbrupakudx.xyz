@@ -1,11 +1,60 @@
 #gallery {
 }
 
+
+
+
+
+// //Flashlight and monstr
+// #gallery.section-left {
+//   background: url('../img/monstr4.png'),
+//     url('../img/main-characters/main-characters-flashlight-desk.png');
+
+//   background-position: calc(50% + 160px) 47px, calc(50% + 225px) 15px;
+//   background-repeat: no-repeat;
+//   background-size: 45px auto, 900px auto;
+// }
+// @media only screen and (min-width: 1200px) {
+//   #gallery.section-left {
+//     background-position: calc(50% + 585px) 40px, calc(50% + 50px) -15px;
+//     background-size: 97px auto, 1500px auto;
+//   }
+// }
+// //-------
+
+
+
+
+
+
+//Flash mob
+// .gallery-container {
+//   padding-top: 50px;
+// }
+// #gallery::before {
+//   content: '';
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   background: url('../img/main-characters/main-characters-flashlight-mob.png');
+//   background-repeat: no-repeat;
+//   background-position: -60px -17px;
+//   background-size: auto 250px;
+//   z-index: -1;
+// }
+  //Flash desk
+// @media only screen and (min-width: 1200px) {
+
+
+
+// .gallery-icon {
+
 //Flashlight and monstr
 #gallery {
   background: url('../img/monstr4.webp'),
     url('../img/main-characters/main-characters-flashlight-desk.png');
-
   background-position: calc(50% + 155px) 47px, calc(50% + 235px) 10px;
   background-repeat: no-repeat;
   background-size: 46px auto, 900px auto;
@@ -14,7 +63,7 @@
     background-position: calc(50% + 535px) -10px, calc(50% + 50px) -25px;
     background-size: 97px auto, 1500px auto;
   }
-}
+// }
 
 // .container-gallery {
 //   padding: 20px;
