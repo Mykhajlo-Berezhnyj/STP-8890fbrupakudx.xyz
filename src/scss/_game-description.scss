@@ -2,6 +2,26 @@
   position: relative;
 }
 
+//Flashlight and monstr
+#game-description.section-left {
+  background: url('../img/monstr2.png'),
+    url('../img/main-characters/main-characters-flashlight-desk.png');
+
+  background-position: calc(50% + 156px) 50px, calc(50% + 225px) 15px;
+  background-repeat: no-repeat;
+  background-size: 46px auto, 900px auto;
+}
+@media only screen and (min-width: 1200px) {
+  #game-description.section-left {
+    background-position: calc(50% + 595px) 30px, calc(50% + 50px) -15px;
+    background-size: 99px auto, 1500px auto;
+  }
+}
+//-------
+
+
+
+
 //Flash mob
 // .game-description-container {
 //   padding-top: 60px;
