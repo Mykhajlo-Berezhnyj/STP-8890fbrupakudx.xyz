@@ -7,3 +7,4 @@ import './js/reviewes';
 import './js/main-cookies';
 import './js/hero';
 import './js/flashlight';
+import './js/scrol-to-up';

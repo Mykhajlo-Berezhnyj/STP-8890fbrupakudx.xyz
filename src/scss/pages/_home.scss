@@ -39,3 +39,55 @@
     rgba(0, 0, 0, 0.842) 30px
   );
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0, 0, 0, 0.055);
+  border: 2px solid #99d91d;
+  border-radius: 50%;
+  color: #99d91d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1000;
+  transition: opacity 0.3s ease, visibility 0.3s ease,
+    background-color 0.3s ease, transform 0.3s ease;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--color1, white);
+    transition: transform 0.3s ease;
+  }
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  &:hover {
+    background-color: #99d91d;
+    transform: scale(1.1);
+    color: #1a3a64;
+    border: 2px solid #1a3a64;
+
+    svg {
+      transform: translateY(-3px);
+    }
+
+    &:active {
+      color: #89318c;
+      border: 2px solid #89318c;
+      transform: scale(0.95);
+    }
+  }
+}
