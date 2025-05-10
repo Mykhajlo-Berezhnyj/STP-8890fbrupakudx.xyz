@@ -5,7 +5,7 @@
   height: 267px;
   padding: 40px 20px;
   color: #fff;
-  @include container;  
+  @include container;
 }
 .footer-menu-list {
   display: flex;
@@ -23,6 +23,13 @@
   font-size: 10px;
   line-height: 2;
   text-align: center;
+}
+
+.footer-menu-list a:hover {
+  color: #99d91d;
+}
+.footer-menu-list a:active {
+  color: #89318C;
 }
 
 @media screen and (min-width: 1200px) {
