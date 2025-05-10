@@ -19,11 +19,11 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 288px;
+  max-width: 288px;
   order: 1;
   @include media(desktop) {
     padding-bottom: 105px;
-    width: 552px;
+    max-width: 552px;
     order: -1;
   }
 }
@@ -49,7 +49,7 @@
   padding-top: 16px;
   padding-bottom: 16px;
   max-width: 288px;
-  height: 57;
+  height: 57px;
   border-radius: 3.3px;
   border: 0.83px solid #000000;
   background: $_link_hover_color;

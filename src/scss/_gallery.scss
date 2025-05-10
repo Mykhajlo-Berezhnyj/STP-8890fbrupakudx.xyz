@@ -1,89 +1,32 @@
 #gallery {
-  position: relative;
-
-  // background-image: url('/img/flashlight-mob.png');
-  // background-position: calc((100% + 320px) / 2 - 30px) -20px;
-  // background-repeat: no-repeat;
-  // background-size: auto 150px;
-  // transform: rotate(0.81deg);
-
-  // @include media(desktop) {
-  //   background-image: url('/img/flashlight-desk.png');
-  //   background-position: -25px -15px;
-  //   background-size: auto 220px;
-  // }
 }
 
-//Flash mob
-// .gallery-container {
-//   padding-top: 50px;
-// }
-// #gallery::before {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background: url('../img/main-characters/main-characters-flashlight-mob.png');
-//   background-repeat: no-repeat;
-//   background-position: -60px -17px;
-//   background-size: auto 250px;
-//   z-index: -1;
-// }
-  //Flash desk
-// @media only screen and (min-width: 1200px) {
+//Flashlight and monstr
+#gallery {
+  background: url('../img/monstr4.webp'),
+    url('../img/main-characters/main-characters-flashlight-desk.png');
 
-//   #gallery::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background: url('../img/main-characters/main-characters-flashlight-desk.png');
-//     background-repeat: no-repeat;
-//     background-position: -113px 25px;
-//     background-size: auto;
+  background-position: calc(50% + 155px) 47px, calc(50% + 235px) 10px;
+  background-repeat: no-repeat;
+  background-size: 46px auto, 900px auto;
+
+  @include media(desktop) {
+    background-position: calc(50% + 535px) -10px, calc(50% + 50px) -25px;
+    background-size: 97px auto, 1500px auto;
+  }
+}
+
+// .container-gallery {
+//   padding: 20px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+
+//   @include media(desktop) {
+//     padding-left: 0;
 //   }
 // }
-
-.gallery-icon {
-
-
-  width: 44.71px;
-  height: 37.53px;
-  //   left: calc(100% + 19px);
-  //   top: -14.17px;
-  transform: translate(17.68px, 14.17px) rotate(0.81deg);
-
-  @include media(desktop) {
-
-    transform: translate(17.68px, 14.17px) rotate(0.81deg);
-
-
-  }
-}
-
-// top: 55px;
-// left: -30px;
-// width: 54px;
-
-// .container0 {
-//   max-width: 100%;
-//   padding-left: 0;
-//   padding-right: 0;
-// }
-
-.container-gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @include media(desktop) {
-    padding-left: 0;
-  }
-}
 
 .gallery-title {
   text-align: right;
@@ -94,21 +37,7 @@
     margin-bottom: 135.29px;
   }
 }
-// .gallery-icon {
-//   position: relative;
-//   width: 44.71px;
-//   top: -122.33px;
-//   right: -21.68px;
-//   margin-top: -14.17px;
-//   transform: rotate(-0.81deg);
-//   @include media(desktop) {
-//     width: 96.87px;
-//     height: 81.3px;
-//     top: 4150.91px;
-//     right: 79.24px;
-//     transform: rotate(17.99deg);
-//   }
-// }
+
 .img-gallery {
   width: 323px;
   height: 431px;
@@ -127,12 +56,13 @@
   height: 100%;
 }
 
-#gallery-swiper .swiper-slide {
+#gallery-swiper .swiper-slider {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 24px;
   height: 420px;
+  overflow: hidden;
 
   @include media(desktop) {
     height: 574px;
