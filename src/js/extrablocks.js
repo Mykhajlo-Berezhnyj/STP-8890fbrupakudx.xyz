@@ -11,6 +11,7 @@ const swiper = new Swiper('#extrablocks-swiper', {
   spaceBetween: 72,
   slideToClickedSlide: true,
   loop: true,
+  touchRatio: 0.5,
   grabCursor: true,
   autoplay: {
     delay: 2500,
