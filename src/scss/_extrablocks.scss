@@ -22,75 +22,6 @@
   }
 }
 
-// //Flashlight and monstr
-// #extrablocks.section-right {
-//   background: url('../img/monstr3.png'),
-//     url('../img/key-features/key-features-flashlight-desk.png');
-
-//   background-position: calc(50% - 160px) 43px, calc(50% - 225px) -10px;
-//   background-repeat: no-repeat;
-//   background-size: 59px auto, 900px auto;
-// }
-// @media only screen and (min-width: 1200px) {
-//   #extrablocks.section-right {
-//     background-position: calc(50% - 600px) 34px, calc(50% - 50px) -21px;
-//     background-size: 94px auto, 1500px auto;
-//   }
-// }
-//-------
-
-//Flashlight mob
-// .container-extrablocks {
-//   padding-top: 30px;
-// }
-
-// #extrablocks::before {
-//   content: '';
-//   position: absolute;
-//   top: 0;
-//   left: 0;
-//   right: 0;
-//   bottom: 0;
-//   background: url('../img/key-features/key-features-flashlight-mob.png');
-//   background-repeat: no-repeat;
-//   width: 100vw;
-//   background-position: calc(100% + 70px) -10px;
-//   background-size: auto 150px;
-//   z-index: -1;
-// }
-
-//Flashlight desk
-// @media only screen and (min-width: 1200px) {
-//   .container-extrablocks {
-//     padding-top: 60px;
-//   }
-//   #extrablocks::before {
-//     content: '';
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     right: 0;
-//     bottom: 0;
-//     background: url('../img/key-features/key-features-flashlight-desk.png');
-//     background-repeat: no-repeat;
-//     width: 100vw;
-//     background-position: calc(100% + 70px) 10px;
-//     background-size: auto;
-//   }
-// }
-
-// .extrablocks-icon {
-//   width: 58.65px;
-//   height: 39.8px;
-
-//   // top: 50px;
-//   // left: -10px;
-//   transform: rotate(23.13deg) translate(-38px, 20px
-//   @include media(desktop) {
-//     background-position: calc(50% - 590px) 14px, calc(50% - 50px) -21px;
-//     background-size: 94px auto, 1500px auto;
-//   }
-// }
 
 .h2-extrablock {
   margin-bottom: 78px;
@@ -128,7 +59,7 @@
 }
 
 .extrablocks-card:hover {
-  transform: scale(1.1);
+  // transform: scale(1.1);
   background: linear-gradient(0deg, #161356 0%, #89318c 100%),
     linear-gradient(180deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
   box-shadow: 8px 11px 13.5px 0px #00000059;
