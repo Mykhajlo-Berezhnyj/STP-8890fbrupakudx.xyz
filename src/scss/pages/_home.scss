@@ -8,6 +8,66 @@
   z-index: 9999;
 }
 
+.light-active {
+  pointer-events: auto;
+}
+.flashlight-hint {
+  position: fixed;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: black;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 0.4s;
+  z-index: 9999;
+  pointer-events: none;
+}
+.flashlight-hint.visible {
+  opacity: 1;
+}
+
+.flashlight-menu {
+  position: fixed;
+  z-index: 10000;
+  background: #222;
+  color: white;
+  list-style: none;
+  margin: 0;
+  padding: 5px 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  min-width: 160px;
+  font-size: 14px;
+}
+
+.flashlight-menu.hidden {
+  display: none;
+}
+
+.flashlight-menu li {
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.flashlight-menu li:hover {
+  background-color: #444;
+}
+
+.flashlight-menu select {
+  margin-left: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  padding: 4px;
+  border-radius: 4px;
+}
+.flashlight-hint.visible {
+  opacity: 1;
+}
+
 .flashlight-overlay.full-dark {
   background: rgba(0, 0, 0, 1);
 }
