@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Keyboard, Pagination } from 'swiper/modules';
 
 const swiper = new Swiper('#extrablocks-swiper', {
-  modules: [Autoplay, Keyboard, Pagination],
+  modules: [Autoplay, Pagination],
   slidesPerView: 1,
   spaceBetween: 72,
   slideToClickedSlide: true,
@@ -17,11 +17,11 @@ const swiper = new Swiper('#extrablocks-swiper', {
   autoplay: {
     delay: 5000,
   },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
+  // keyboard: {
+  //   enabled: true,
+  //   onlyInViewport: true,
+  //   pageUpDown: true,
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -29,7 +29,7 @@ const swiper = new Swiper('#extrablocks-swiper', {
   breakpoints: {
     320: {
       slidesPerView: 1,
-      centeredSlides: true,
+      // centeredSlides: true,
     },
     1200: {
       slidesPerView: 3,
