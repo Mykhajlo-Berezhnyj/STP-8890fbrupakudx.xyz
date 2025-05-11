@@ -13,8 +13,9 @@ const swiper = new Swiper('#extrablocks-swiper', {
   loop: true,
   touchRatio: 0.5,
   grabCursor: true,
+  speed: 1000,
   autoplay: {
-    delay: 2500,
+    delay: 3000,
   },
   keyboard: {
     enabled: true,
