@@ -31,6 +31,36 @@
   </svg>
 </button>
 
+<div class="flashlight-overlay"></div>
+<div class="flashlight-hint">
+  Для керування ефектом — клікніть правою кнопкою миші
+</div>
+
+<div class="flashlight-overlay"></div>
+<div class="flashlight-hint">
+  Для керування ефектом — клікніть правою кнопкою миші
+</div>
+
+<ul class="flashlight-menu hidden" id="flashlightMenu">
+  <li data-action="deactivate">🔌 Вимкнути ліхтарик</li>
+  <li>
+    🌑 Змінити світло
+    <select id="radiusSelector">
+      <option value="100">100</option>
+      <option value="200">200</option>
+      <option value="300">300</option>
+      <option value="400" selected>400</option>
+      <option value="500">500</option>
+      <option value="600">600</option>
+    </select>
+  </li>
+  <li data-action="setting-reset">🔄 Скинути налаштування</li>
+  <li data-action="reset">🔄 Перезапустити ефект</li>
+  <li data-action="close">✖ Закрити вікно</li>
+</ul>
+
+
+
 <!-- <svg class="icon-scroll-to-up" width="18" height="18">
   <use xlink:href="../img/sprite.svg#icon-arrow-up"></use>
 </svg>
