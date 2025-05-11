@@ -6,7 +6,7 @@ import 'swiper/css/pagination';
 import { Autoplay, Keyboard, Pagination } from 'swiper/modules';
 
 const swiper = new Swiper('#extrablocks-swiper', {
-  modules: [Autoplay, Keyboard, Pagination],
+  modules: [Autoplay, Pagination],
   slidesPerView: 1,
   spaceBetween: 72,
   slideToClickedSlide: true,
@@ -15,11 +15,11 @@ const swiper = new Swiper('#extrablocks-swiper', {
   autoplay: {
     delay: 2500,
   },
-  keyboard: {
-    enabled: true,
-    onlyInViewport: true,
-    pageUpDown: true,
-  },
+  // keyboard: {
+  //   enabled: true,
+  //   onlyInViewport: true,
+  //   pageUpDown: true,
+  // },
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
